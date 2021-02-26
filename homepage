@@ -1,1 +1,13 @@
-hello world :)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Meta Info-->
+  <meta charset="utf-8">
+  <title>Mutual Aid 101</title>
+  <meta name="description" content="Want to know how to start a mutual aid society? We can help! Go through our website to get a better understanding of where to begin and what resources can help!">
+  <meta name="keywords" content="mutual aid group, mutual aid plan, community mutual aid, mutual aid networks">
+  <meta name="author" content="This website was made in collaborations with Albany Law and SUNY Albany. The students who worked on this were Joeclyn Chan, Zach Taylor, and Katherine Amoresano!">
+  
+  <!--Mobile Specific Metas-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
