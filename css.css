@@ -1,41 +1,5 @@
 /**CSS for homepage**/
 
-  /**This is code relevant to the header**/
-.header {
-  position: relative;
-  text-align: center;
-  color: white;
-
-  box-sizing: border-box;
-  width:auto;
-  height:100px;
-  border: 1px solid red;
-}
-
-.overimgtext {
-  position: absolute;
-  font-size: 50px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-  /**This is code relevant to the 4 panel navigation that only pertains to the homepage**/
-
-.fourpanelnavi {
-  display: flex;
-  flex-direction: row;
-  flex-flow: row nowrap;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.panels{
-  flex: 1;
-  border: 1px solid red;
-  justify-content: center;
-  margin-right:10px;
-}
-
 /**CSS for wheretostart**/
 
 /**CSS for mutualaidnearme**/
@@ -43,15 +7,3 @@
 /**CSS for tools**/
 
 /**CSS for faq**/
-
-/**CSS for Navigation**/
-
-/**This code is relevant to all webpages**/
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-a, a:hover, a:active, a:visited {
-  color: white;
-}
