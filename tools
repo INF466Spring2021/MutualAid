@@ -24,22 +24,35 @@
   <div class="overimgtext"><a href=""> </a></div>
 </div>
 
-<!-- Nav Computer-->
+<!-- Nav Computer -->
 
 <nav class="nav">
 
 </nav>
 
-<!-- Nav Mobile-->
+<!-- Nav Mobile -->
 <nav class="nav_mobile">
 
 </nav>
-
+<--! insert tab here -->
 <!-- Communication -->
 <div class="subtopic_1">
-<p> Learn about Slack! </p>
-  <img=src="">
+<h3> Learn about Slack! </h3>
+<p> slack slack </p>
+ <img=src="">
 </div>
+
+<div class="subtopic_2">
+<h3> Learn about Whatsapp! </h3>
+<p> Whatsapp whatsapp <p>
+<img=src="">
+
+<div class="subtopic_3">
+<h3> Learn about Zoom! </h3>
+<p> Zoom zoom <p>
+<img=src="">
+
+<--! insert tab here -->
 <!-- Operations -->
 <div class="subtopic_1">
 
