@@ -1,1 +1,33 @@
+/**CSS for homepage**/
 
+/**CSS for wheretostart**/
+
+/**CSS for mutualaidnearme**/
+
+/**CSS for tools**/
+.subtopic_1{
+position: relative; 
+text-align:center;
+width:100%;
+margin:auto;
+border:5px solid darkblue;
+padding:20px;}
+
+.subtopic_2{
+position: relative; 
+text-align:center;
+width:100%;
+margin:auto;
+border:5px solid darkblue;
+padding:20px;}
+
+.subtopic_3{
+position: relative; 
+text-align:center;
+width:100%;
+margin:auto;
+border:5px solid darkblue;
+padding:20px;}
+
+
+/**CSS for faq**/
