@@ -34,6 +34,7 @@
 <nav class="nav_mobile">
 
 </nav>
+
 <--! tab links -->
 <div class="tab">
   <button class="tablinks" onclick="Openname(event, '')">Communication</button>
@@ -41,14 +42,28 @@
 </div>
 
 <--! tab content -->
-<div id="tab 1" class="tabcontent">
+<div id="tab 1 tools" class="tabcontent">
+  <div class="subtopic 1">
   <h3></h3>
   <p></p>
+  </div>
+  
+  <div class="subtopic 2">
+  <h3></h3>
+  <p></p>
+  </div>
 </div>
 
-<div id="tab 2" class="tabcontent">
+<div id="tab 2 tools" class="tabcontent">
+  <div class="subtopic 1">
   <h3></h3>
   <p></p>
+  </div>
+  
+  <div class="subtopic 2">
+  <h3></h3>
+  <p></p>
+  </div>
 </div>
 
 
