@@ -30,12 +30,14 @@
   padding-top: 3vh;
   text-align: center;
   align-items: stretch;
+  justify-content: center;
   height: 70vh;
 }
 
 .panels{
   flex: 1;
   border: 1px solid yellow;
+  background-color: black;
   justify-content: center;
   margin-right:10px;
 }
