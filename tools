@@ -34,40 +34,23 @@
 <nav class="nav_mobile">
 
 </nav>
-<--! insert tab here -->
-<!-- Communication -->
-<div class="subtopic_1">
-<h3> Learn about Slack! </h3>
-<p> slack slack </p>
- <img=src="">
+<--! tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="Openname(event, '')">Communication</button>
+  <button class="tablinks" onclick="Openname(event, '')">Operations</button>
 </div>
 
-<div class="subtopic_2">
-<h3> Learn about Whatsapp! </h3>
-<p> Whatsapp whatsapp <p>
-<img=src="">
+<--! tab content -->
+<div id="tab 1" class="tabcontent">
+  <h3></h3>
+  <p></p>
 </div>
 
-<div class="subtopic_3">
-<h3> Learn about Zoom! </h3>
-<p> Zoom zoom <p>
-<img=src="">
+<div id="tab 2" class="tabcontent">
+  <h3></h3>
+  <p></p>
 </div>
 
-<--! insert tab here -->
-<!-- Operations -->
-<div class="subtopic_1">
-<h3> Learn about Airtable! </h3>
-<p> air air <p>
-<img=src="">
-</div>
 
-<div class="subtopic_2">
-<h3> Learn about Google's Applications! </h3>
-<p> google google <p>
-<img=src="">
-</div>
-
-</div>
 </body>
 </html>
