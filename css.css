@@ -27,9 +27,10 @@
   display: flex;
   flex-direction: row;
   flex-flow: row nowrap;
-  padding-top: 80px;
+  padding-top: 3vh;
   text-align: center;
   align-items: stretch;
+  height: 70vh;
 }
 
 .panels{
