@@ -28,6 +28,12 @@
 
 <nav class="nav">
 
+  <a href="">Home</a> 
+  <a href=""> Where to Start</a> 
+  <a href="">Tools</a> 
+  <a href="">Mutual Aid Near Me</a>
+  <a href="">FAQ</a>
+
 </nav>
 
 <!-- Nav Mobile -->
@@ -66,6 +72,10 @@
   </div>
 </div>
 
+<footer> 
+<p> about us </p>
+<p> contact us </p>
+</footer>
 
 </body>
 </html>
