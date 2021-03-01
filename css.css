@@ -1,1 +1,68 @@
 
+<<<<<<< Updated upstream
+=======
+/**CSS for wheretostart**/
+
+/**CSS for mutualaidnearme**/
+
+/**CSS for tools**/
+
+/**CSS for faq**/
+.nav {
+    height: 100%;
+    margin-top: 5%;
+    width: 15%;
+    position: fixed; /** Stays in place on scroll **/
+    z-index: 1; /** Stay on top **/
+    top: 0; /** Stay at the top **/
+    left: 0;
+    background-color: lightcoral;
+    overflow-x: hidden; /** Disables horizontal scroll **/
+    padding-top: 2%;
+}
+
+/** Nav menu links **/
+.nav a {
+    padding: 20px 8px 20px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    display: block;
+}
+
+.nav a:hover {
+    color:white;
+}
+
+/** Page content - Everything right of navbar **/
+.main {
+    margin-left: 15%;
+    padding: 0 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+}
+
+.pracQ {
+    width: 50%;
+    background-color: mediumpurple;
+    float: left;
+    height: 100%;
+}
+
+.philQ {
+    width: 50%;
+    background-color: darkseagreen;
+    float: left;
+    height: 100%;
+}
+
+.faqQuestion {
+    padding-left: 1%;
+}
+>>>>>>> Stashed changes
