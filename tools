@@ -41,13 +41,13 @@
 
 </nav>
 
-<--! tab links -->
+<!-- tab links -->
 <div class="tab">
   <button class="tablinks" onclick="Openname(event, '')">Communication</button>
   <button class="tablinks" onclick="Openname(event, '')">Operations</button>
 </div>
 
-<--! tab content -->
+<!-- tab content -->
 <div id="tab 1 tools" class="tabcontent">
   <div class="subtopic 1">
   <h3></h3>
