@@ -22,6 +22,7 @@
     </head>
 
     <body>
+    <div class="wrapper">
 
         <!-- Navi Computer-->
 
@@ -35,15 +36,14 @@
 
         <main>
             <!-- Header -->
-            <div class="imgundertext">
-              <img src="fbff7d.png">
-              <div class="overimgtext"><a href="#">FAQ</a></div>
+            <div class="header">
+              <a href="urlhere">Home</a>
             </div>
 
             <br />
             <br />
 
-            <div>
+            <div class="content">
                 <div id="tabs">
                     <ul>
                         <li><a href="#tabs-1">Practical</a></li>
@@ -111,6 +111,12 @@
             </div>
         </main>
 
+        <div class="footer">
+          <div class="buttonplacement">
+            <div tabindex="0" class="flexbutton"><button class="buttons">Contact Us</button></div>
+            <div tabindex="0" class="flexbutton"><button class="buttons">About Us</button></div>
+          </div>
+        </div>
         <!-- Navi Mobile-->
         <nav class="nav_mobile">
 
@@ -124,5 +130,6 @@
                 $( "#tabs" ).tabs();
                 });
         </script>
+    </div>
     </body>
 </html>
