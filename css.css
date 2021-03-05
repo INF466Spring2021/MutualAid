@@ -1,58 +1,43 @@
 /**CSS for homepage**/
 
-    /**This is code is for putting text over images**/
+  /**This is code is for putting text over images**/
 
     /**This one specifically is for the header so it can have a box**/
-.imgundertext {
-    position: relative;
-    text-align: center;
-    color: white;
 
-    box-sizing: border-box;
-    width:auto;
-    height:100px;
-    border: 1px solid yellow;
+.header {
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+  background-color: #1abc9c;
+  padding: 40px 10px;
+  text-align: center;
+  font-size: 25px;
 }
 
-.overimgtext {
-    position: absolute;
-    font-size: 50px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/**This is code relevant to the 4 panel navigation that only pertains to the homepage**/
+  /**This is code relevant to the 4 panel navigation that only pertains to the homepage**/
 .fourpanelnavi {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row nowrap;
-    padding-top: 3vh;
-    text-align: center;
-    align-items: stretch;
-    justify-content: center;
-    height: 70vh;
+  padding-top: 30px;
+  display: flex;
+  width: 100%;
 }
 
-.panels {
-    flex: 1;
-    border: 1px solid yellow;
-    background-color: black;
-    justify-content: center;
-    margin-right:10px;
+.panels{
+  flex: 1;
+  border: 1px solid yellow;
+  margin:10px;
 }
 
 .panelimage {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .paneltext {
-    position: absolute;
-    font-size: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /**CSS for wheretostart**/
@@ -64,22 +49,23 @@
 /**CSS for faq**/
 .sidenav {
     height: 100%;
-    margin-top: 5%;
+    margin-top: 100px;
+    margin-bottom: 100px;
     width: 15%;
     position: fixed; /** Stays in place on scroll **/
     z-index: 1; /** Stay on top **/
     top: 0; /** Stay at the top **/
     left: 0;
-    background-color: lightcoral;
+    background-color: #8ddece;
     overflow-x: hidden; /** Disables horizontal scroll **/
-    padding-top: 2%;
+\
 }
 
 /** Nav menu links **/
 .sidenav a {
     padding: 20px 8px 20px 16px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     display: block;
 }
 
@@ -98,52 +84,59 @@ h1 {
     /**Below is a mini footer**/
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: absolute;
     width: 100%;
-    background-color: black;
+    height: 100px;
+    left: 0px;
+    bottom: 0px;
+    margin-top: -100px;
+    background-color: #1abc9c;
     color: white;
-    padding-left: 20px;
-    text-align: left;
-}
+    text-align: center;
+  }
 
-/**Below is a button designs for the footer**/
-.buttons {
+    /**Below is a button designs for the footer**/
+  .buttons {
     border: yellow;
     color: black;
     padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin-left: 10px;
-    margin-bottom: 10px;
     cursor: pointer;
-}
+  }
 
-/**parent for flex button**/
-.buttonplacement{
+  /**parent for flex button**/
+  .buttonplacement{
     display: flex;
-    flex-direction: row;
-    flex-flow: row nowrap;
-    padding-top: 10px;
-    text-align: center;
-}
+    width: 100%;
+  }
 
-/**child for flex button**/
-.flexbutton {
+  /**child for flex button**/
+  .flexbutton {
     flex: 1;
-    justify-content: center;
-    margin-right:20px;
-}
+    margin:20px;
+  }
 
-/**This code is relevant to all webpages**/
-img {
+  /**This code is relevant to all webpages**/
+  img {
     max-width: 100%;
     max-height: 100%;
+  }
+
+  a, a:hover, a:active, a:visited {
+    color: #031310;
+
+  }
+
+  body{
+    background-color: #e8f8f5;
+    margin: 0 0 100px;
+  }
+
+  html {
+    position: relative;
+    min-height: 100%;
 }
 
-a, a:hover, a:active, a:visited {
-    color: white;
+* {
+  box-sizing: border-box;
 }
