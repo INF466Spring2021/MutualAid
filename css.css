@@ -1,5 +1,60 @@
 /**CSS for homepage**/
 
+    /**This is code is for putting text over images**/
+
+    /**This one specifically is for the header so it can have a box**/
+.imgundertext {
+    position: relative;
+    text-align: center;
+    color: white;
+
+    box-sizing: border-box;
+    width:auto;
+    height:100px;
+    border: 1px solid yellow;
+}
+
+.overimgtext {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/**This is code relevant to the 4 panel navigation that only pertains to the homepage**/
+.fourpanelnavi {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    padding-top: 3vh;
+    text-align: center;
+    align-items: stretch;
+    justify-content: center;
+    height: 70vh;
+}
+
+.panels {
+    flex: 1;
+    border: 1px solid yellow;
+    background-color: black;
+    justify-content: center;
+    margin-right:10px;
+}
+
+.panelimage {
+    position: relative;
+    text-align: center;
+}
+
+.paneltext {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /**CSS for wheretostart**/
 
 /**CSS for mutualaidnearme**/
@@ -7,3 +62,88 @@
 /**CSS for tools**/
 
 /**CSS for faq**/
+.sidenav {
+    height: 100%;
+    margin-top: 5%;
+    width: 15%;
+    position: fixed; /** Stays in place on scroll **/
+    z-index: 1; /** Stay on top **/
+    top: 0; /** Stay at the top **/
+    left: 0;
+    background-color: lightcoral;
+    overflow-x: hidden; /** Disables horizontal scroll **/
+    padding-top: 2%;
+}
+
+/** Nav menu links **/
+.sidenav a {
+    padding: 20px 8px 20px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+}
+
+/** Page content - Everything right of navbar **/
+main {
+    margin-left: 15%;
+    padding: 0 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/**CSS for Navigation**/
+
+    /**Below is a mini footer**/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    text-align: left;
+}
+
+/**Below is a button designs for the footer**/
+.buttons {
+    border: yellow;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/**parent for flex button**/
+.buttonplacement{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/**child for flex button**/
+.flexbutton {
+    flex: 1;
+    justify-content: center;
+    margin-right:20px;
+}
+
+/**This code is relevant to all webpages**/
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a, a:hover, a:active, a:visited {
+    color: white;
+}
