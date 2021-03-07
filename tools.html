@@ -30,56 +30,60 @@
 
     </nav>
 
-      
-      <!-- Header -->
-    <main>
-	
-    <div class="header">
-      <a href="urlhere">Tools</a>
-    </div>
-	    
-        <br />
-        <br />
-        <br />
+    <div class="main">
+        <!-- Header -->
+        <div class="header">
+          <a href="urlhere">Tools</a>
+        </div>
 
+        <br />
+        <br />
+        <br />
+	<main>
         <div class="container"> <!-- Look into jQuery UI tabs. For now, just static HTML -->
-    <!-- tab links -->
+            <!-- tab links -->
     <div class="tab">
       <button class="tablinks" onclick="Openname(event, '')">Communication</button>
       <button class="tablinks" onclick="Openname(event, '')">Operations</button>
     </div>
-
+	
+	
     <!-- tab content -->
-    <div class="tabcontent>
-		<div class="subtopic_1">
-			<h3>Slack</h3>
-			<p>Slack information here</p>
+    <div id="tab-1">
+		<div class="tabcontent">
+			<div class="subtopic_1">
+				<h3>Slack</h3>
+					<p>Slack information here.</p>
+			</div>
+
+			<div class="subtopic_2">
+				<h3>WhatsApp</h3>
+					<p>WhatsApp information here.</p>
+			</div>
+	  
+			<div class="subtopic_3">
+				<h3>Zoom</h3>
+					<p>Zoom information here.</p>
+			</div>
+		</div>
+	</div>
+
+    <div id="tab2">
+		<div class="tabcontent">
+			<div class="subtopic_1">
+				<h3>Airtable</h3>
+					<p>Airtable information here.</p>
+			</div>
+
+			<div class="subtopic_2">
+				<h3>Google Applications</h3>
+					<p>Google Application information here.</p>
+			</div>
 		</div>
     </div>
-
-      <div class="subtopic_2">
-		<h3>WhatsApp</h3>
-		<p>WhatsApp information here</p>
-      </div>
-	  
-	  <div class="subtopic_3">
-		<h3>Zoom</h3>
-		<p>Zoom information here</p>
-	  </div>
    
 	
-      <div class="subtopic_1">
-		<h3>Airtable</h3>
-		<p>Airtable information here</p>
-      </div>
-
-      <div class="subtopic_2">
-		<h3>Google Applications</h3>
-		<p>Google Application information here</p>
-      </div>
-   
-      
-
+	</main>
     <!-- Nav Mobile -->
     <nav class="nav_mobile">
 
@@ -91,6 +95,6 @@
         <div tabindex="0" class="flexbutton"><button class="buttons">About Us</button></div>
       </div>
     </div>
-    </main>
+
     </body>
 </html>
