@@ -12,77 +12,87 @@
     <!-- Mobile Meta Info -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS --> 
+    <!-- CSS -->
     <link rel="stylesheet" href="css.css">
 
     </head>
     <body>
 
-    <!-- Nav Computer -->
+        <!-- Navi Computer-->
 
-    <nav class="sidenav">
+        <nav class="sidenav">
+            <a href="homepage.html">Home</a>
+            <a href="wheretostart.html">Where to Start</a>
+            <a href="tools.html">Tools</a>
+            <a href="mutualaidnearme.html">Mutual Aid Near Me</a>
+            <a href="#">FAQ</a>
+        </nav>
+        
+        <!-- Navi Mobile-->
+        <nav class="nav_mobile">
 
-      <a href="homepage.html">Home</a> 
-      <a href="wheretostart.html"> Where to Start</a> 
-      <a href="#">Tools</a> 
-      <a href="mutualaidnearme.html">Mutual Aid Near Me</a>
-      <a href="faq.html">FAQ</a>
-
-    </nav>
-    
-    <div class="main">
+        </nav>
+        
         <!-- Header -->
-        <div class="imgundertext">
-          <img src="fbff7d.png">
-          <div class="overimgtext"><a href="#">Tools</a></div>
+        
+        <div class="header">
+            <a href="urlhere">Home</a>
         </div>
+        
+        <main>
+            <!-- tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="Openname(event, '')">Communication</button>
+                <button class="tablinks" onclick="Openname(event, '')">Operations</button>
+            </div>
 
-        <br />
-        <br />
-        <br />
 
-        <div class="container"> <!-- Look into jQuery UI tabs. For now, just static HTML -->
-            <--! tab links -->
-    <div class="tab">
-      <button class="tablinks" onclick="Openname(event, '')">Communication</button>
-      <button class="tablinks" onclick="Openname(event, '')">Operations</button>
-    </div>
+            <!-- tab content -->
+            <div id="tab-1">
+                <div class="tabcontent">
+                    <div class="subtopic_1">
+                        <h3>Slack</h3>
+                        <p>Slack information here.</p>
+                    </div>
 
-    <--! tab content -->
-    <div id="tab 1 tools" class="tabcontent">
-      <div class="subtopic 1">
-      <h3></h3>
-      <p></p>
-      </div>
+                    <div class="subtopic_2">
+                        <h3>WhatsApp</h3>
+                        <p>WhatsApp information here.</p>
+                    </div>
 
-      <div class="subtopic 2">
-      <h3></h3>
-      <p></p>
-      </div>
-    </div>
+                    <div class="subtopic_3">
+                        <h3>Zoom</h3>
+                        <p>Zoom information here.</p>
+                    </div>
+                </div>
+            </div>
 
-    <div id="tab 2 tools" class="tabcontent">
-      <div class="subtopic 1">
-      <h3></h3>
-      <p></p>
-      </div>
+            <div id="tab2">
+                <div class="tabcontent">
+                    <div class="subtopic_1">
+                        <h3>Airtable</h3>
+                        <p>Airtable information here.</p>
+                    </div>
 
-      <div class="subtopic 2">
-      <h3></h3>
-      <p></p>
-      </div>
-    </div>
+                    <div class="subtopic_2">
+                        <h3>Google Applications</h3>
+                        <p>Google Application information here.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Nav Mobile -->
+        <nav class="nav_mobile">
+
+        </nav>
+
+        <div class="footer">
+          <div class="buttonplacement">
+            <div tabindex="0" class="flexbutton"><button class="buttons">Contact Us</button></div>
+            <div tabindex="0" class="flexbutton"><button class="buttons">About Us</button></div>
+          </div>
         </div>
-    </div>
-    <!-- Nav Mobile -->
-    <nav class="nav_mobile">
-
-    </nav>
-
-    <footer> 
-    <p> about us </p>
-    <p> contact us </p>
-    </footer>
 
     </body>
 </html>
