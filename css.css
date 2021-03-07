@@ -45,6 +45,33 @@
 /**CSS for mutualaidnearme**/
 
 /**CSS for tools**/
+h3 {
+     text-align:center;
+}
+ 
+.subtopic_1{
+position: relative; 
+text-align:center;
+width:100%;
+margin:auto;
+border:5px solid darkblue;
+padding:10px;}
+
+.subtopic_2{
+position: relative; 
+text-align:center;
+width:100%;
+margin:auto;
+border:5px solid darkblue;
+padding:10px;}
+
+.subtopic_3{
+position: relative; 
+text-align:center;
+width:100%;
+margin:auto;
+border:5px solid darkblue;
+padding:10px;}
 
 /**CSS for faq**/
 .sidenav {
@@ -53,8 +80,6 @@
     margin-bottom: 100px;
     width: 15%;
     position: fixed; /** Stays in place on scroll **/
-    z-index: 1; /** Stay on top **/
-    top: 0; /** Stay at the top **/
     left: 0;
     background-color: #8ddece;
     overflow-x: hidden; /** Disables horizontal scroll **/
@@ -71,7 +96,7 @@
 /** Page content - Everything right of navbar **/
 main {
     margin-left: 15%;
-    padding: 0 10px;
+    padding: 30px 10px 0 10px;
 }
 
 h1 {
