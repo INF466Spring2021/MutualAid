@@ -80,12 +80,9 @@ padding:10px;}
     margin-bottom: 100px;
     width: 15%;
     position: fixed; /** Stays in place on scroll **/
-    z-index: 1; /** Stay on top **/
-    top: 0; /** Stay at the top **/
     left: 0;
     background-color: #8ddece;
     overflow-x: hidden; /** Disables horizontal scroll **/
-\
 }
 
 /** Nav menu links **/
