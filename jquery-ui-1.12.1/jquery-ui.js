@@ -18703,4 +18703,8 @@ var widgetsTooltip = $.ui.tooltip;
 
 
 
+<<<<<<< HEAD
 }));
+=======
+}));
+>>>>>>> jocelyn
