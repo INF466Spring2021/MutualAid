@@ -94,11 +94,11 @@ h1 {
 
     /**Below is a button designs for the footer**/
   .buttons {
-    border: yellow;
-    color: black;
     padding: 15px 32px;
     font-size: 16px;
     cursor: pointer;
+    border: 1px solid #e8f8f5;
+    display: inline-block;
   }
 
   /**parent for flex button**/
@@ -119,9 +119,15 @@ h1 {
     max-height: 100%;
   }
 
-  a, a:hover, a:active, a:visited {
+  a, a:visited {
     color: #031310;
+    background-color: transparent;
 
+  }
+
+  a:hover, a:active {
+    background-color: #e8f8f5 ;
+    opacity: 0.5;
   }
 
   body{
