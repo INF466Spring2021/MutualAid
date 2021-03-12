@@ -1,7 +1,5 @@
 /**CSS for homepage**/
 
-  /**This is code is for putting text over images**/
-
     /**This one specifically is for the header so it can have a box**/
 
 header {
@@ -14,24 +12,38 @@ header {
   text-align: center;
 }
 
+/**logo placement and such**/
+
+.logo {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
   /**This is code relevant to the 4 panel navigation that only pertains to the homepage**/
+
+  /**This is the div that holds all the panels div**/
 .fourpanelnavi {
   padding-top: 30px;
   display: flex;
   width: 100%;
 }
 
+/**This is the panels, margin is used for the space in between them. Border can be got rid off.**/
 .panels{
   flex: 1;
   border: 1px solid yellow;
   margin:10px;
 }
 
+/**This controls the position of the text and images in the panels.**/
 .panelimage {
   position: relative;
   text-align: center;
 }
 
+/**This puts the font in the middle of the image.**/
 .paneltext {
   position: absolute;
   font-size: 30px;
@@ -80,7 +92,7 @@ h1 {
 
     /**Below is a mini footer**/
 
-.footer {
+footer {
     position: fixed;
     width: 100%;
     height: 100px;
@@ -127,7 +139,7 @@ h1 {
 
   a:hover, a:active {
     background-color: #e8f8f5 ;
-    opacity: 0.5;
+    opacity: 0.8;
   }
 
   body{
