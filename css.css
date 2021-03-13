@@ -4,14 +4,11 @@
 
     /**This one specifically is for the header so it can have a box**/
 
-.header {
-  overflow: hidden;
+header {
   width: 100%;
   height: 100px;
   background-color: #1abc9c;
-  padding: 40px 10px;
-  text-align: center;
-  font-size: 25px;
+  position: fixed;
 }
 
   /**This is code relevant to the 4 panel navigation that only pertains to the homepage**/
@@ -34,7 +31,7 @@
 
 .paneltext {
   position: absolute;
-  font-size: 20px;
+  font-size: 30px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -72,12 +69,16 @@ main {
     padding: 30px 10px 0 10px;
 }
 
+h1 {
+    text-align: center;
+}
+
 /**CSS for Navigation**/
 
     /**Below is a mini footer**/
 
-.footer {
-    position: absolute;
+footer {
+    position: fixed;
     width: 100%;
     height: 100px;
     left: 0px;
@@ -86,15 +87,16 @@ main {
     background-color: #1abc9c;
     color: white;
     text-align: center;
-  }
+}
 
 /**Below is a button designs for the footer**/
 .buttons {
-    border: yellow;
+    border: 1px solid #e8f8f5;
     color: black;
     padding: 15px 32px;
     font-size: 16px;
     cursor: pointer;
+    display: inline-block;
 }
 
 /**parent for flex button**/
@@ -106,7 +108,7 @@ main {
 /**child for flex button**/
 .flexbutton {
     flex: 1;
-    margin: 20px;
+    margin: 25px;
 }
 
 /**This code is relevant to all webpages**/
@@ -131,5 +133,32 @@ html {
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/**used to create space**/
+.spacer{
+    width: 100%;
+    height: 100px;
+}
+
+@media screen and (max-width: 400px) {
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .sidenav a {
+        text-align: center;
+    }
+    main {margin-left: 0;}
+    header {position: relative;}
+    .spacer {display: none;}
+    h1 {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-top: 25px;
+    }
 }
