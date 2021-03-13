@@ -142,7 +142,25 @@ html {
     height: 100px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1555px) {
+    .sidenav a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1165px) {
+    .sidenav a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1051px) {
     .sidenav {
         width: 100%;
         height: auto;
@@ -152,6 +170,7 @@ html {
     }
     .sidenav a {
         text-align: center;
+        font-size: 25px;
     }
     main {margin-left: 0;}
     header {position: relative;}
