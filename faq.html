@@ -18,7 +18,6 @@
         <!-- JS -->
         <script src="jquery-ui-1.12.1/jquery-3.6.0.js"></script>
         <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
-
     </head>
 
     <body>
@@ -127,7 +126,8 @@
             $(document).ready(function() {
                 $( ".accordion" ).accordion({
                     heightStyle: "content",
-                    collapsible: true
+                    collapsible: true,
+                    active: false
                 });
                 $( "#tabs" ).tabs();
             });
