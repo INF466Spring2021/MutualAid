@@ -57,6 +57,15 @@ header {
 /**CSS for mutualaidnearme**/
 
 /**CSS for tools**/
+#tabs {
+    margin-top:100px;
+}
+/**CSS for about us**/
+#aboutus {
+    margin:120px auto 0;
+    padding:0 10px;
+    max-width:800px;
+}
 
 /**CSS for faq**/
 .sidenav {
