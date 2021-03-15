@@ -1,40 +1,55 @@
 /**CSS for homepage**/
 
-  /**This is code is for putting text over images**/
-
-    /**This one specifically is for the header so it can have a box**/
+/**This one specifically is for the header so it can have a box**/
 
 header {
-  width: 100%;
-  height: 100px;
-  background-color: #1abc9c;
-  position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #1abc9c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
 }
 
-  /**This is code relevant to the 4 panel navigation that only pertains to the homepage**/
+/**logo placement and such**/
+
+.logo {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/**This is code relevant to the 4 panel navigation that only pertains to the homepage**/
+
+/**This is the div that holds all the panels div**/
 .fourpanelnavi {
-  padding-top: 30px;
-  display: flex;
-  width: 100%;
+    padding-top: 30px;
+    display: flex;
+    width: 100%;
 }
 
+/**This is the panels, margin is used for the space in between them. Border can be got rid off.**/
 .panels{
-  flex: 1;
-  border: 1px solid yellow;
-  margin:10px;
+    flex: 1;
+    border: 1px solid yellow;
+    margin:10px;
 }
 
+/**This controls the position of the text and images in the panels.**/
 .panelimage {
-  position: relative;
-  text-align: center;
+    position: relative;
+    text-align: center;
 }
 
+/**This puts the font in the middle of the image.**/
 .paneltext {
-  position: absolute;
-  font-size: 30px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /**CSS for wheretostart**/
@@ -42,16 +57,26 @@ header {
 /**CSS for mutualaidnearme**/
 
 /**CSS for tools**/
+#tabs {
+    margin-top:100px;
+}
+
+/**CSS for about us**/
+#aboutus {
+    margin:120px auto 0;
+    padding:0 10px;
+    max-width:800px;
+}
 
 /**CSS for faq**/
 .sidenav {
     height: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
     width: 15%;
     position: fixed; /** Stays in place on scroll **/
-    left: 0;
+    z-index: 100px; /** Stay on top **/
+    top: 100px; /** Stay at the top **/
     background-color: #8ddece;
+    clear: both;
     overflow-x: hidden; /** Disables horizontal scroll **/
 }
 
@@ -66,7 +91,7 @@ header {
 /** Page content - Everything right of navbar **/
 main {
     margin-left: 15%;
-    padding: 30px 10px 0 10px;
+    padding: 0 10px;
 }
 
 h1 {
@@ -75,7 +100,7 @@ h1 {
 
 /**CSS for Navigation**/
 
-    /**Below is a mini footer**/
+/**Below is a mini footer**/
 
 footer {
     position: fixed;
@@ -89,13 +114,28 @@ footer {
     text-align: center;
 }
 
+footer a {
+    width: 150px;
+    text-decoration:none;
+    margin-left:60px;
+    margin-right:60px;
+    padding:15px 32px;
+    background-color:#e0e0de;
+    font-size: 16px;
+    border-radius:4px;
+    border: 3px solid #e0e0de;
+}
+
+footer a:hover {
+    border: 3px solid black;
+}
+
 /**Below is a button designs for the footer**/
 .buttons {
-    border: 1px solid #e8f8f5;
-    color: black;
     padding: 15px 32px;
     font-size: 16px;
     cursor: pointer;
+    border: 1px solid #e8f8f5;
     display: inline-block;
 }
 
@@ -108,7 +148,7 @@ footer {
 /**child for flex button**/
 .flexbutton {
     flex: 1;
-    margin: 25px;
+    margin:25px;
 }
 
 /**This code is relevant to all webpages**/
@@ -117,9 +157,15 @@ img {
     max-height: 100%;
 }
 
-a, a:hover, a:active, a:visited {
+a, a:visited {
     color: #031310;
+    background-color: transparent;
 
+}
+
+a:hover, a:active {
+    background-color: #e8f8f5 ;
+    opacity: 0.8;
 }
 
 body{
@@ -136,7 +182,7 @@ html {
     box-sizing: border-box;
 }
 
-/**used to create space**/
+/**used to create spoace**/
 .spacer{
     width: 100%;
     height: 100px;
@@ -168,13 +214,24 @@ html {
         margin-top: 0;
         margin-bottom: 0;
     }
+    
     .sidenav a {
         text-align: center;
         font-size: 25px;
     }
-    main {margin-left: 0;}
-    header {position: relative;}
-    .spacer {display: none;}
+    
+    main {
+        margin-left: 0;
+    }
+    
+    header {
+        position: relative;
+    }
+    
+    .spacer {
+        display: none;
+    }
+    
     h1 {
         margin-block-start: 0;
         margin-block-end: 0;
