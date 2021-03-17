@@ -246,6 +246,13 @@ html {
         font-size: 16px;
     }
 
+    footer {
+      left: 0px;
+      margin-top: 100px;
+      position: absolute;
+      bottom: 0px;
+    }
+
     .spacer {
         display: none;
     }
