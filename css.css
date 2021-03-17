@@ -186,6 +186,7 @@ html {
     height: 100px;
 }
 
+/**mobile resizing**/
 @media screen and (max-width: 1555px) {
     .sidenav a {
         font-size: 20px;
@@ -214,27 +215,25 @@ html {
         top: 0;
         left: 0;
     }
-    
+
     #tabs {
         margin-top: 0;
     }
+
+
     .sidenav a {
         text-align: center;
         font-size: 25px;
     }
-    
+
     main {
         margin-left: 0;
     }
-    
+
     header {
         position: relative;
     }
-    
-    .spacer {
-        display: none;
-    }
-    
+
     h1 {
         margin-block-start: 0;
         margin-block-end: 0;
@@ -246,8 +245,27 @@ html {
         padding: 5px 20px;
         font-size: 16px;
     }
-    
+
+    .spacer {
+        display: none;
+    }
+
     .logo {
         position: absolute;
     }
+
+    .fourpanelnavi {
+        padding-top: 30px;
+        flex-direction: column;
+        display: flex;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .panels{
+        flex: 1;
+        border: 1px solid yellow;
+        margin:10px;
+    }
+
 }
