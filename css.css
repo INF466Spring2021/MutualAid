@@ -1,27 +1,5 @@
 /**CSS for homepage**/
 
-/**This one specifically is for the header so it can have a box**/
-
-header {
-    width: 100%;
-    height: 100px;
-    background-color: #1abc9c;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-/**logo placement and such**/
-
-.logo {
-    height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-/**This is code relevant to the 4 panel navigation that only pertains to the homepage**/
-
 /**This is the div that holds all the panels div**/
 .fourpanelnavi {
     padding-top: 30px;
@@ -51,6 +29,13 @@ header {
     transform: translate(-50%, -50%);
 }
 
+.spacer{
+    width: 100%;
+    height: 100px;
+}
+
+
+
 /**CSS for wheretostart**/
 
 .intraLink {
@@ -76,18 +61,37 @@ h3 {
     margin: 0 60px;
 }
 
+
+
 /**CSS for mutualaidnearme**/
+
+
 
 /**CSS for tools**/
 
+
+
 /**CSS for about us**/
+
 #aboutus {
     margin: 120px auto 0;
     padding: 0 10px;
     max-width: 800px;
 }
 
+
+
 /**CSS for faq**/
+
+
+h1 {
+    text-align: center;
+}
+
+
+
+/**CSS for Navigation**/
+
 .sidenav {
     height: 100%;
     width: 15%;
@@ -107,7 +111,10 @@ h3 {
     display: block;
 }
 
-/** Page content - Everything right of navbar **/
+
+
+/** CSS for every page **/
+
 main {
     margin-left: 15%;
     margin-top: 6%;
@@ -124,15 +131,50 @@ html {
     min-height: 100%;
 }
 
-h1 {
-    text-align: center;
-}
-
 * {
     box-sizing: border-box;
 }
 
-/**CSS for Navigation**/
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a, a:visited {
+    color: #031310;
+    background-color: transparent;
+
+}
+
+a:hover, a:active {
+    background-color: #e8f8f5 ;
+    opacity: 0.8;
+}
+
+/**This one specifically is for the header so it can have a box**/
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #1abc9c;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/**logo placement and such**/
+.logo {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
 
 /**CSS for footer**/
 
@@ -164,76 +206,9 @@ footer a:hover {
     border: 3px solid black;
 }
 
-/**This code is relevant to all webpages**/
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-a, a:visited {
-    color: #031310;
-    background-color: transparent;
-
-}
-
-a:hover, a:active {
-    background-color: #e8f8f5 ;
-    opacity: 0.8;
-}
 
 
-/**used to create space**/
-.spacer{
-    width: 100%;
-    height: 100px;
-}
-
-@media screen and (max-width: 1820px) {
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 50px;
-    }
-}
-
-@media screen and (max-width: 1620px) {
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 40px;
-    }
-}
-
-@media screen and (max-width: 1555px) {
-    .sidenav a {
-        font-size: 20px;
-    }
-    
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 30px;
-    }
-}
-
-@media screen and (max-width: 1350px) {
-    .sidenav a {
-        font-size: 18px;
-    }
-    
-    .intraDiv {
-        display: block;
-        margin: 35px 0;
-        width: 100%;
-        white-space: nowrap;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 1165px) {
-    .sidenav a {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 1051px) {
+@media screen and (max-width: 1050px) {
     .sidenav {
         width: 100%;
         height: auto;
