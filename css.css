@@ -200,7 +200,7 @@ a, a:visited {
 
 a:hover, a:active {
     color:#1814F3;
-    /**background-color: #e8f8f5 ;**/
+    background-color: #e8f8f5 ;
     opacity: 0.8;
 }
 
