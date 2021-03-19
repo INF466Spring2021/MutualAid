@@ -164,6 +164,28 @@ footer a:hover {
     border: 3px solid black;
 }
 
+
+/**Below is a button designs for the footer**/
+.buttons {
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #e8f8f5;
+    display: inline-block;
+}
+
+/**parent for flex button**/
+.buttonplacement{
+    display: flex;
+    width: 100%;
+}
+
+/**child for flex button**/
+.flexbutton {
+    flex: 1;
+    margin: 25px;
+}
+
 /**This code is relevant to all webpages**/
 img {
     max-width: 100%;
@@ -238,8 +260,7 @@ a:hover, a:active {
         width: 100%;
         height: auto;
         position: relative;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 0px 0px;
         top: 0;
         left: 0;
     }
@@ -293,11 +314,12 @@ a:hover, a:active {
         position: absolute;
     }
 
+
     #text {
         display: none;
     }
 
-
+    /*below pertains to the mobile homepage only*/
     .fourpanelnavi {
         padding-top: 30px;
         flex-direction: column;
