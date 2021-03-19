@@ -199,7 +199,8 @@ a, a:visited {
 }
 
 a:hover, a:active {
-    background-color: #e8f8f5 ;
+    color:#1814F3;
+    /**background-color: #e8f8f5 ;**/
     opacity: 0.8;
 }
 
