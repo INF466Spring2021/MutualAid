@@ -146,7 +146,7 @@ footer a:hover {
 /**child for flex button**/
 .flexbutton {
     flex: 1;
-    margin:25px;
+    margin: 25px;
 }
 
 /**This code is relevant to all webpages**/
@@ -210,8 +210,7 @@ html {
         width: 100%;
         height: auto;
         position: relative;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 0px 0px;
         top: 0;
         left: 0;
     }
@@ -261,6 +260,7 @@ html {
         position: absolute;
     }
 
+    /*below pertains to the mobile homepage only*/
     .fourpanelnavi {
         padding-top: 30px;
         flex-direction: column;
