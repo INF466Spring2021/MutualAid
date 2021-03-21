@@ -191,8 +191,9 @@ input[type=submit]:hover {
     background-color:#45a049;
 }
 /** background color and padding for form**/
-.form-popup {
+.dropdown {
     display:none;
+    position: relative;
     border-radius:5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -204,10 +205,15 @@ input[type=submit]:hover {
     padding:10px;
     background-color:white;
 }
-.closebutton {
+.closeButton {
     position:absolute;
-    top:0;
-    right:0;
+    right:20px;
+    top:20px;
+    cursor:pointer;
+    background-color:orangered;
+}
+.closeButton:hover{
+    background-color:red;
 }
   /**This code is relevant to all webpages**/
   img {
