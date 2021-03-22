@@ -1,27 +1,5 @@
 /**CSS for homepage**/
 
-/**This one specifically is for the header so it can have a box**/
-
-header {
-    width: 100%;
-    height: 100px;
-    background-color: #1abc9c;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-/**logo placement and such**/
-
-.logo {
-    height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-/**This is code relevant to the 4 panel navigation that only pertains to the homepage**/
-
 /**This is the div that holds all the panels div**/
 .fourpanelnavi {
     padding-top: 30px;
@@ -51,6 +29,13 @@ header {
     transform: translate(-50%, -50%);
 }
 
+.spacer{
+    width: 100%;
+    height: 100px;
+}
+
+
+
 /**CSS for wheretostart**/
 
 .intraLink {
@@ -67,27 +52,63 @@ header {
     border: 3px solid black;
 }
 
-h3 {
+h2 {
     margin-top: 5%;
+    text-decoration: underline;
+    font-size: 30px;
 }
 
 .intraDiv {
-    display: inline;
-    margin: 0 60px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.mobileNav {
+    display: none;
+}
+
+.mobileNav a {
+    text-decoration: none;
+}
+
+.question {
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.miniquestion {
+    margin-top: 60px;
 }
 
 /**CSS for mutualaidnearme**/
 
+
+
 /**CSS for tools**/
 
+
+
 /**CSS for about us**/
+
 #aboutus {
     margin: 120px auto 0;
     padding: 0 10px;
     max-width: 800px;
 }
 
+
+
 /**CSS for faq**/
+
+
+h1 {
+    text-align: center;
+}
+
+
+
+/**CSS for Navigation**/
+
 .sidenav {
     height: 100%;
     width: 15%;
@@ -105,6 +126,70 @@ h3 {
     text-decoration: none;
     font-size: 25px;
     display: block;
+}
+
+
+
+/** CSS for every page **/
+
+main {
+    margin-left: 15%;
+    margin-top: 6%;
+    padding: 10px 10px;
+}
+
+body{
+    background-color: #e8f8f5;
+    margin: 0 0 100px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a, a:visited {
+    color: #031310;
+    background-color: transparent;
+
+}
+
+a:hover, a:active {
+    color:#1814F3;
+    background-color: #e8f8f5 ;
+    opacity: 0.8;
+}
+
+/**This one specifically is for the header so it can have a box**/
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #1abc9c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/**logo placement and such**/
+.logo {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    text-align: center;
 }
 
 /**Back to top buttons**/
@@ -130,32 +215,6 @@ h3 {
 
 }
 
-/** Page content - Everything right of navbar **/
-main {
-    margin-left: 15%;
-    margin-top: 6%;
-    padding: 10px 10px;
-}
-
-body{
-    background-color: #e8f8f5;
-    margin: 0 0 100px;
-}
-
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-h1 {
-    text-align: center;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-/**CSS for Navigation**/
 
 /**CSS for footer**/
 
@@ -188,98 +247,8 @@ footer a:hover {
 }
 
 
-/**Below is a button designs for the footer**/
-.buttons {
-    padding: 15px 32px;
-    font-size: 16px;
-    cursor: pointer;
-    border: 1px solid #e8f8f5;
-    display: inline-block;
-}
 
-/**parent for flex button**/
-.buttonplacement{
-    display: flex;
-    width: 100%;
-}
-
-/**child for flex button**/
-.flexbutton {
-    flex: 1;
-    margin: 25px;
-}
-
-/**This code is relevant to all webpages**/
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-a, a:visited {
-    color: #031310;
-    background-color: transparent;
-
-}
-
-a:hover, a:active {
-    color:#1814F3;
-    background-color: #e8f8f5 ;
-    opacity: 0.8;
-}
-
-
-/**used to create space**/
-.spacer{
-    width: 100%;
-    height: 100px;
-}
-
-@media screen and (max-width: 1820px) {
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 50px;
-    }
-}
-
-@media screen and (max-width: 1620px) {
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 40px;
-    }
-}
-
-@media screen and (max-width: 1555px) {
-    .sidenav a {
-        font-size: 20px;
-    }
-
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 30px;
-    }
-}
-
-@media screen and (max-width: 1350px) {
-    .sidenav a {
-        font-size: 18px;
-    }
-
-    .intraDiv {
-        display: block;
-        margin: 35px 0;
-        width: 100%;
-        white-space: nowrap;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 1165px) {
-    .sidenav a {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 1051px) {
+@media screen and (max-width: 1050px) {
     .sidenav {
         width: 100%;
         height: auto;
@@ -288,21 +257,20 @@ a:hover, a:active {
         top: 0;
         left: 0;
     }
-
+    
     #tabs {
         margin-top: 0;
     }
-
+    
     .sidenav a {
         text-align: center;
         font-size: 25px;
     }
-
+    
     main {
-        margin-left: 0;
-        margin-top: 0;
+        margin: 0 10px;
     }
-
+    
     header {
         position: relative;
     }
@@ -316,7 +284,7 @@ a:hover, a:active {
         margin-block-end: 0;
         padding-top: 25px;
     }
-
+    
     footer a {
         margin: 0 20px;
         padding: 5px 20px;
@@ -329,21 +297,15 @@ a:hover, a:active {
       position: absolute;
       bottom: 0px;
     }
-
-    .spacer {
-        display: none;
-    }
-
+    
     .logo {
         position: absolute;
     }
-
-
+    
     #text {
         display: none;
     }
-
-    /*below pertains to the mobile homepage only*/
+    
     .fourpanelnavi {
         padding-top: 30px;
         flex-direction: column;
@@ -356,5 +318,13 @@ a:hover, a:active {
         flex: 1;
         border: 1px solid yellow;
         margin:10px;
+    }
+    
+    .desktopNav {
+        display: none;
+    }
+    
+    .mobileNav {
+        display: block;
     }
 }
