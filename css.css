@@ -1,4 +1,4 @@
-/**CSS for homepage**/
+/****************************************** CSS for homepage ******************************************/
 
 /**This is the div that holds all the panels div**/
 .fourpanelnavi {
@@ -36,7 +36,7 @@
 
 
 
-/**CSS for wheretostart**/
+/****************************************** CSS for wheretostart ******************************************/
 
 .intraLink {
     text-decoration: none;
@@ -102,15 +102,15 @@ h2 {
     scroll-margin-top: 4em;
 }
 
-/**CSS for mutualaidnearme**/
+/****************************************** CSS for mutualaidnearme ******************************************/
 
 
 
-/**CSS for tools**/
+/****************************************** CSS for tools ******************************************/
 
 
 
-/**CSS for about us**/
+/****************************************** CSS for about us ******************************************/
 
 #aboutus {
     margin: 120px auto 0;
@@ -120,11 +120,11 @@ h2 {
 
 
 
-/**CSS for faq**/
+/****************************************** CSS for faq ******************************************/
 
 
 
-/**CSS for Navigation**/
+/****************************************** CSS for Navigation ******************************************/
 
 .sidenav {
     height: 100%;
@@ -147,7 +147,7 @@ h2 {
 
 
 
-/** CSS for every page **/
+/****************************************** CSS for every page ******************************************/
 
 main {
     margin-left: 15%;
@@ -186,7 +186,6 @@ a:hover, a:active {
     opacity: 0.8;
 }
 
-/**This one specifically is for the header so it can have a box**/
 header {
     width: 100%;
     height: 100px;
@@ -243,7 +242,7 @@ li {
 }
 
 
-/**CSS for footer**/
+/****************************************** CSS for footer ******************************************/
 
 footer {
     position: fixed;
