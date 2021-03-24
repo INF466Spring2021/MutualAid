@@ -63,11 +63,11 @@ h2 {
     margin: 0 10px;
 }
 
-.mobileNav {
+.wheretostartlink {
     display: none;
 }
 
-.mobileNav a {
+.wheretostartlink a {
     text-decoration: none;
 }
 
@@ -244,6 +244,10 @@ li {
     display: none;
 }
 
+#mobileHeader {
+    display: none;
+}
+
 
 /****************************************** CSS for footer ******************************************/
 
@@ -292,6 +296,7 @@ footer a:hover {
     
     header {
         position: relative;
+        display: none;
     }
 
     .spacer {
@@ -301,10 +306,10 @@ footer a:hover {
     h1 {
         margin-block-start: 0;
         margin-block-end: 0;
-        padding-top: 30px;
-        padding-left: 65px;
+        padding-top: 15px;
+        padding-left: 35px;
         text-align: block;
-        font-size: 35px;
+        font-size: 28px;
     }
     
     .mobileMANM {
@@ -327,7 +332,8 @@ footer a:hover {
     
     .logo {
         position: absolute;
-        width: 100%;
+        width: 80%;;
+        z-index: 2;
     }
     
     #text {
@@ -352,7 +358,7 @@ footer a:hover {
         display: none;
     }
     
-    .mobileNav {
+    .wheretostartlink {
         display: block;
     }
     
@@ -387,5 +393,56 @@ footer a:hover {
         font-size: 25px;
         display: block;
         text-align: center;
+    }
+    
+    #mobileHeader {
+        display: block;
+    }
+    
+    /* Style the navigation menu */
+    .mobileNav {
+        overflow: hidden;
+        background-color: #1abc9c;
+        position: static;
+        background: rgb(26, 188, 156, .9)
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .mobileNav #myLinks {
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .mobileNav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px;
+        display: block;
+        text-align: center;
+    }
+
+    /* Style the hamburger menu */
+    .mobileNav a.icon {
+        background-color: #1abc9c;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: #1abc9c;
+        color: white;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .bars div {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
     }
 }
