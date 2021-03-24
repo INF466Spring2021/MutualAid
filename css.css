@@ -404,7 +404,7 @@ footer a:hover {
         overflow: hidden;
         background-color: #1abc9c;
         position: static;
-        background: rgb(26, 188, 156, .9)
+        background: rgb(26, 188, 156, .9);
     }
 
     /* Hide the links inside the navigation menu (except for logo/home) */
@@ -429,6 +429,7 @@ footer a:hover {
         position: absolute;
         right: 0;
         top: 0;
+        padding-top: 30px;
     }
 
     /* Style the active link (or home/logo) */
