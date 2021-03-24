@@ -196,7 +196,6 @@ header {
     z-index: 2;
 }
 
-/**logo placement and such**/
 .logo {
     height: 100px;
     position: fixed;
@@ -241,6 +240,10 @@ li {
     font-size: 18px;
 }
 
+.mobilesidenav {
+    display: none;
+}
+
 
 /****************************************** CSS for footer ******************************************/
 
@@ -276,21 +279,11 @@ footer a:hover {
 
 @media screen and (max-width: 1050px) {
     .sidenav {
-        width: 100%;
-        height: auto;
-        position: relative;
-        margin: 0px 0px;
-        top: 0;
-        left: 0;
+        display: none;
     }
     
     #tabs {
         margin-top: 0;
-    }
-    
-    .sidenav a {
-        text-align: center;
-        font-size: 25px;
     }
     
     main {
@@ -308,7 +301,15 @@ footer a:hover {
     h1 {
         margin-block-start: 0;
         margin-block-end: 0;
-        padding-top: 25px;
+        padding-top: 30px;
+        padding-left: 65px;
+        text-align: block;
+        font-size: 35px;
+    }
+    
+    .mobileMANM {
+        font-size: 32px;
+        padding-top: 15px;
     }
     
     footer a {
@@ -326,6 +327,7 @@ footer a:hover {
     
     .logo {
         position: absolute;
+        width: 100%;
     }
     
     #text {
@@ -352,5 +354,38 @@ footer a:hover {
     
     .mobileNav {
         display: block;
+    }
+    
+    .section {
+        scroll-margin-top: 0;
+    }
+    
+    .topbutton {
+        position: sticky;
+        float: right;
+        bottom: 0;
+        padding-bottom: 15px;
+    }
+    
+    .mobilesidenav {
+        display: block;
+        background-color: #8ddece;
+        clear: both;
+        overflow-x: hidden;
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin: 0px 0px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    
+    .mobilesidenav a {
+        padding: 20px 8px 20px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+        text-align: center;
     }
 }
