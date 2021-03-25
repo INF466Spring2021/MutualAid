@@ -99,7 +99,7 @@ h2 {
 }
 
 .section {
-    scroll-margin-top: 4em;
+    scroll-margin-top: 100px;
 }
 
 /****************************************** CSS for mutualaidnearme ******************************************/
@@ -151,8 +151,8 @@ h2 {
 
 main {
     margin-left: 15%;
-    margin-top: 6%;
-    padding: 10px 10px;
+    margin-top: 100px;
+    padding: 10px;
 }
 
 body{
@@ -205,7 +205,7 @@ header {
 
 h1 {
     text-align: center;
-    margin-block-start: 5px;
+    margin-top: 5px;
     font-size: 75px;
 }
 
@@ -281,7 +281,7 @@ footer a:hover {
 
 
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 500px) {
     .sidenav {
         display: none;
     }
@@ -304,8 +304,7 @@ footer a:hover {
     }
 
     h1 {
-        margin-block-start: 0;
-        margin-block-end: 0;
+        margin: 0;
         padding-top: 15px;
         padding-left: 35px;
         text-align: block;
@@ -332,8 +331,9 @@ footer a:hover {
     
     .logo {
         position: absolute;
-        width: 80%;;
+        width: 30%;;
         z-index: 2;
+        float: left;
     }
     
     #text {
@@ -437,7 +437,7 @@ footer a:hover {
         background-color: #1abc9c;
         color: white;
         text-align: center;
-        margin-top: 60px;
+        margin-top: -10px;
     }
 
     .bars div {
@@ -445,5 +445,15 @@ footer a:hover {
         height: 5px;
         background-color: black;
         margin: 6px 0;
+    }
+    
+    .mobileHeadContainer {
+        width: 100%;
+        height: 100px;
+    }
+    
+    .mobilePageTitle {
+        width: 50%;
+        margin-left: 25%;
     }
 }
