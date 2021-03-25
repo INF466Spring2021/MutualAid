@@ -21,16 +21,20 @@
     </head>
 
     <body>
-
-        <!-- Header -->
+        
+        <!-- Header Desktop -->
         <header>
-            <div class="logo">
-                <img src="placeholders/leaf.jpg">
+            <div class="headContainer">
+                <div class="logo">
+                    <img src="placeholders\leaf.jpg">
+                </div>
+                <div class="pageTitle">
+                    <h1>FAQ</h1>
+                </div>
+                <a name="top"></a>
             </div>
-            <h1>FAQ</h1>
-            <a name="top"></a>
         </header>
-
+        
         <!-- Navi Computer-->
         <nav class="sidenav">
             <a href="homepage.html">Home</a>
@@ -39,17 +43,46 @@
             <a href="mutualaidnearme.html">Mutual Aid Near Me</a>
             <a href="#">FAQ</a>
         </nav>
+        
+        <!-- Header + Navi Mobile -->
+        <header id="mobileHeader">
+            <div>
+                <div class="logo">
+                    <img src="placeholders\leaf.jpg">
+                </div>
+                <div class="mobilePageTitle">
+                    <h1 style="padding-top: 20%;">FAQ</h1>
+                </div>
+                <div class="mobileNav">
+                    <a href="#home" class="active"></a>
 
-        <!-- Navi Mobile-->
-        <nav class="nav_mobile">
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="homepage.html">Home</a>
+                        <a href="wheretostart.html">Where to Start</a>
+                        <a href="tools.html">Tools</a>
+                        <a href="mutualaidnearme.html">Mutual Aid Near Me</a>
+                        <a href="#">FAQ</a>
+                    </div>
 
-        </nav>
-
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <div class="bars">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    </a>
+                </div>
+                
+                <a name="top"></a>
+            </div>
+        </header>
+        
         <main>
             <div id="tabs">
                 <ul>
                     <li><a href="#tabs-1">Practical</a></li>
-                    <li><a href="#tabs-2">Philosophical</a></li>
                 </ul>
                 <div id="tabs-1">
                     <div class="accordion">
@@ -68,57 +101,23 @@
                         <h3>Do I have to have a conflict of interest policy?</h3>
                         <div>
                             <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            *Question not answered in word document*
                             </p>
                         </div>
-                        <h3>Sample Question 4</h3>
-                        <div>
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </div>
+
                     </div>
                 </div>
-
-                <div id="tabs-2">
-                    <div class="accordion">
-                        <h3>Sample Question 1</h3>
-                        <div>
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </div>
-                        <h3>Sample Question 2</h3>
-                        <div>
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </div>
-                        <h3>Sample Question 3</h3>
-                        <div>
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </div>
-                        <h3>Sample Question 4</h3>
-                        <div>
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            
             <div class="topbutton">  <a href="#">Back to top</a></div>
-
+            </div>
+            
         </main>
 
         <footer>
-          <div class="footerspace">
-            <a href="about_us.html">About Us</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh6mxQpbQfLExG7o7IjPGaYtDYuMu-tAUPUraE3QAIv-HQeg/viewform?usp=sf_link" target="_blank">Contact Us!</a>
-          </div>
+            <div class="footerspace">
+                <a href="about_us.html">About Us</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh6mxQpbQfLExG7o7IjPGaYtDYuMu-tAUPUraE3QAIv-HQeg/viewform?usp=sf_link" target="_blank">Contact Us!</a>
+            </div>
         </footer>
 
         <script>
@@ -130,6 +129,16 @@
                 });
                 $( "#tabs" ).tabs();
             });
+            
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
         </script>
     </body>
 </html>
