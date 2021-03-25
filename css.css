@@ -264,6 +264,12 @@ footer {
     z-index: 2;
 }
 
+.footerspace {
+
+  margin-top: 3%;
+
+}
+
 footer a {
     width: 150px;
     text-decoration:none;
