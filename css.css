@@ -133,7 +133,7 @@ h3 {
 /** Page content - Everything right of navbar **/
 main {
     margin-left: 15%;
-    margin-top: 6%;
+    margin-top: 100px;
     padding: 10px 10px;
 }
 
@@ -172,6 +172,10 @@ footer {
     z-index: 2;
 }
 
+.footerspace {
+  margin-top: 3%;
+}
+
 footer a {
     width: 150px;
     text-decoration:none;
@@ -185,28 +189,6 @@ footer a {
 
 footer a:hover {
     border: 3px solid black;
-}
-
-
-/**Below is a button designs for the footer**/
-.buttons {
-    padding: 15px 32px;
-    font-size: 16px;
-    cursor: pointer;
-    border: 1px solid #e8f8f5;
-    display: inline-block;
-}
-
-/**parent for flex button**/
-.buttonplacement{
-    display: flex;
-    width: 100%;
-}
-
-/**child for flex button**/
-.flexbutton {
-    flex: 1;
-    margin: 25px;
 }
 
 /**This code is relevant to all webpages**/
@@ -312,8 +294,6 @@ a:hover, a:active {
     }
 
     h1 {
-        margin-block-start: 0;
-        margin-block-end: 0;
         padding-top: 25px;
     }
 
