@@ -232,16 +232,8 @@ h1 {
 
 }
 
-/** Page content - Everything right of navbar **/
-main {
-    margin-left: 15%;
-    margin-top: 100px;
-    padding: 10px 10px;
-}
-
-body{
-    background-color: #e8f8f5;
-    margin: 0 0 100px;
+p {
+    font-size: 18px;
 }
 
 li {
@@ -272,10 +264,6 @@ footer {
     z-index: 2;
 }
 
-.footerspace {
-  margin-top: 3%;
-}
-
 footer a {
     width: 150px;
     text-decoration:none;
@@ -291,75 +279,7 @@ footer a:hover {
     border: 3px solid black;
 }
 
-/**This code is relevant to all webpages**/
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
 
-a, a:visited {
-    color: #031310;
-    background-color: transparent;
-
-}
-
-a:hover, a:active {
-    color:#1814F3;
-    background-color: #e8f8f5 ;
-    opacity: 0.8;
-}
-
-
-/**used to create space**/
-.spacer{
-    width: 100%;
-    height: 100px;
-}
-
-@media screen and (max-width: 1820px) {
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 50px;
-    }
-}
-
-@media screen and (max-width: 1620px) {
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 40px;
-    }
-}
-
-@media screen and (max-width: 1555px) {
-    .sidenav a {
-        font-size: 20px;
-    }
-
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 30px;
-    }
-}
-
-@media screen and (max-width: 1350px) {
-    .sidenav a {
-        font-size: 18px;
-    }
-
-    .intraDiv {
-        display: block;
-        margin: 35px 0;
-        width: 100%;
-        white-space: nowrap;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 1165px) {
-    .sidenav a {
-        font-size: 16px;
-    }
-}
 
 @media screen and (max-width: 1050px) {
     .sidenav {
