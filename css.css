@@ -99,7 +99,7 @@ h2 {
 }
 
 .section {
-    scroll-margin-top: 4em;
+    scroll-margin-top: 100px;
 }
 
 /****************************************** CSS for mutualaidnearme ******************************************/
@@ -151,8 +151,8 @@ h2 {
 
 main {
     margin-left: 15%;
-    margin-top: 6%;
-    padding: 10px 10px;
+    margin-top: 100px;
+    padding: 10px;
 }
 
 body{
@@ -205,7 +205,7 @@ header {
 
 h1 {
     text-align: center;
-    margin-block-start: 5px;
+    margin-top: 5px;
     font-size: 75px;
 }
 
@@ -232,16 +232,8 @@ h1 {
 
 }
 
-/** Page content - Everything right of navbar **/
-main {
-    margin-left: 15%;
-    margin-top: 100px;
-    padding: 10px 10px;
-}
-
-body{
-    background-color: #e8f8f5;
-    margin: 0 0 100px;
+p {
+    font-size: 18px;
 }
 
 li {
@@ -272,10 +264,6 @@ footer {
     z-index: 2;
 }
 
-.footerspace {
-  margin-top: 3%;
-}
-
 footer a {
     width: 150px;
     text-decoration:none;
@@ -291,89 +279,25 @@ footer a:hover {
     border: 3px solid black;
 }
 
-/**This code is relevant to all webpages**/
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-a, a:visited {
-    color: #031310;
-    background-color: transparent;
-
-}
-
-a:hover, a:active {
-    color:#1814F3;
-    background-color: #e8f8f5 ;
-    opacity: 0.8;
+.footerspace {
+  margin-top: 2%;
 }
 
 
-/**used to create space**/
-.spacer{
-    width: 100%;
-    height: 100px;
-}
 
-@media screen and (max-width: 1820px) {
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 50px;
-    }
-}
-
-@media screen and (max-width: 1620px) {
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 40px;
-    }
-}
-
-@media screen and (max-width: 1555px) {
-    .sidenav a {
-        font-size: 20px;
-    }
-
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 30px;
-    }
-}
-
-@media screen and (max-width: 1350px) {
-    .sidenav a {
-        font-size: 18px;
-    }
-
-    .intraDiv {
-        display: block;
-        margin: 35px 0;
-        width: 100%;
-        white-space: nowrap;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 1165px) {
-    .sidenav a {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 500px) {
     .sidenav {
         display: none;
     }
-
+    
     #tabs {
         margin-top: 0;
     }
-
+    
     main {
         margin: 0 10px;
     }
-
+    
     header {
         position: relative;
         display: none;
@@ -384,17 +308,18 @@ a:hover, a:active {
     }
 
     h1 {
+        margin: 0;
         padding-top: 15px;
         padding-left: 35px;
         text-align: block;
         font-size: 28px;
     }
-
+    
     .mobileMANM {
         font-size: 32px;
         padding-top: 15px;
     }
-
+    
     footer a {
         margin: 0 20px;
         padding: 5px 20px;
@@ -407,17 +332,18 @@ a:hover, a:active {
       position: absolute;
       bottom: 0px;
     }
-
+    
     .logo {
         position: absolute;
-        width: 80%;;
+        width: 30%;;
         z-index: 2;
+        float: left;
     }
-
+    
     #text {
         display: none;
     }
-
+    
     .fourpanelnavi {
         padding-top: 30px;
         flex-direction: column;
@@ -431,26 +357,26 @@ a:hover, a:active {
         border: 1px solid yellow;
         margin:10px;
     }
-
+    
     .desktopNav {
         display: none;
     }
-
+    
     .wheretostartlink {
         display: block;
     }
-
+    
     .section {
         scroll-margin-top: 0;
     }
-
+    
     .topbutton {
         position: sticky;
         float: right;
         bottom: 0;
         padding-bottom: 15px;
     }
-
+    
     .mobilesidenav {
         display: block;
         background-color: #8ddece;
@@ -464,7 +390,7 @@ a:hover, a:active {
         left: 0;
         z-index: 1;
     }
-
+    
     .mobilesidenav a {
         padding: 20px 8px 20px 16px;
         text-decoration: none;
@@ -472,11 +398,11 @@ a:hover, a:active {
         display: block;
         text-align: center;
     }
-
+    
     #mobileHeader {
         display: block;
     }
-
+    
     /* Style the navigation menu */
     .mobileNav {
         overflow: hidden;
@@ -515,7 +441,7 @@ a:hover, a:active {
         background-color: #1abc9c;
         color: white;
         text-align: center;
-        margin-top: 60px;
+        margin-top: -10px;
     }
 
     .bars div {
@@ -523,5 +449,15 @@ a:hover, a:active {
         height: 5px;
         background-color: black;
         margin: 6px 0;
+    }
+    
+    .mobileHeadContainer {
+        width: 100%;
+        height: 100px;
+    }
+    
+    .mobilePageTitle {
+        width: 50%;
+        margin-left: 25%;
     }
 }
