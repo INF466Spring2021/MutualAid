@@ -19,18 +19,21 @@
         <script src="jquery-ui-1.12.1/jquery-3.6.0.js"></script>
         <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
     </head>
-
+    
     <body>
-
-        <!-- Header -->
+       
+        <!-- Header Desktop -->
         <header>
-            <div class="logo">
-                <img src="placeholders\leaf.jpg">
+            <div class="headContainer">
+                <div class="logo">
+                    <img src="placeholders/leaf.jpg" alt="">
+                </div>
+                <div class="pageTitle">
+                    <h1>Tools</h1>
+                </div>
             </div>
-            <h1>Tools</h1>
-            <a name="top"></a>
         </header>
-
+        
         <!-- Navi Computer-->
         <nav class="sidenav">
             <a href="homepage.html">Home</a>
@@ -39,12 +42,40 @@
             <a href="mutualaidnearme.html">Mutual Aid Near Me</a>
             <a href="faq.html">FAQ</a>
         </nav>
+        
+        <!-- Header + Navi Mobile -->
+        <header id="mobileHeader">
+            <div>
+                <div class="logo">
+                    <img src="placeholders/leaf.jpg" alt="">
+                </div>
+                <div class="mobilePageTitle">
+                    <h1 style="padding-top: 20%;">Tools</h1>
+                </div>
+                <div class="mobileNav">
+                    <a href="#home" class="active"></a>
 
-        <!-- Navi Mobile-->
-        <nav class="nav_mobile">
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="homepage.html">Home</a>
+                        <a href="wheretostart.html">Where to Start</a>
+                        <a href="#">Tools</a>
+                        <a href="mutualaidnearme.html">Mutual Aid Near Me</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
 
-        </nav>
-
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <div class="bars">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        
         <main>
             <div id="tabs">
                 <ul>
@@ -56,20 +87,20 @@
                         <h3>Slack</h3>
                         <div>
                             <p>
-                            Slack is a platform that utilizes “channels” to sort conversations between groups of people.  Slack is easier to manage than email chains because conversations can be organized by their subject type. Slack can be especially helpful for Mutual Aid societies because it is essentially online pod-mapping; a Mutual Aid society can have different channels dedicated to different causes, or different needs within the same common cause. Users are also able to directly message each other.
+                            Slack is a platform that utilizes “channels” to sort conversations between groups of people.  Slack is easier to manage than email chains because conversations can be organized by their subject type. Slack can be especially helpful for Mutual Aid societies because it is essentially online pod-mapping; a Mutual Aid society can have different channels dedicated to different causes, or different needs within the same common cause. Users are also able to directly message each other. 
                             </p>
-                            <p>
-                            Slack is also useful for its notification system. Volunteers can opt-in to receive push notifications on their desktop, phone, or smartwatch, which makes the process of gathering people in a short time period much more efficient than email or phone chains. Slack will also send an email to volunteers who have not opted to receive push notifications.
+                            <p> 
+                            Slack is also useful for its notification system. Volunteers can opt-in to receive push notifications on their desktop, phone, or smartwatch, which makes the process of gathering people in a short time period much more efficient than email or phone chains. Slack will also send an email to volunteers who have not opted to receive push notifications. 
                             </p>
                         </div>
 
                         <h3>WhatsApp</h3>
                         <div>
                             <p>
-                            WhatsApp is a messaging application that allows users to send messages over wifi. Mutual Aid societies find that WhatsApp is helpful because of the following features.
+                            WhatsApp is a messaging application that allows users to send messages over wifi. Mutual Aid societies find that WhatsApp is helpful because of the following features. 
                             </p>
                             <p>
-                            Large groups: WhatsApp allows users to create groups of up to 256 people at once. For most Mutual Aid societies, this is more than enough.
+                            Large groups: WhatsApp allows users to create groups of up to 256 people at once. For most Mutual Aid societies, this is more than enough. 
                             </p>
                             <p>
                             Document sharing: similar to Slack, documents and files can be shared over WhatsApp, which allows 100mb per document.
@@ -82,13 +113,13 @@
                         <h3>Zoom</h3>
                         <div>
                             <p>
-                            If you were in school or at work in 2020, you were likely introduced to Zoom, Microsoft Teams, or some other video messaging software as a means of communication during quarantine.
+                            If you were in school or at work in 2020, you were likely introduced to Zoom, Microsoft Teams, or some other video messaging software as a means of communication during quarantine. 
                             </p>
                             <p>
                             Zoom and other video messaging options offer an alternative to physical meetings and can be helpful for mutual aid societies. Often, people must work at their day jobs in addition to their role in mutual aid societies, so Zoom and other applications can provide a non-cost restrictive option that allows a pod-map of mutual aid members to meet without breaking the budget.
                             </p>
                             <p>
-                            Zoom is free to use for smaller groups, and relatively inexpensive for larger groups.
+                            Zoom is free to use for smaller groups, and relatively inexpensive for larger groups. 
                             </p>
                         </div>
                     </div>
@@ -126,18 +157,18 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="topbutton">  <a href="#">Back to top</a></div>
-
+            
         </main>
 
         <footer>
-          <div class="footerspace">
-            <a href="about_us.html">About Us</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh6mxQpbQfLExG7o7IjPGaYtDYuMu-tAUPUraE3QAIv-HQeg/viewform?usp=sf_link" target="_blank">Contact Us!</a>
-          </div>
+            <div class="footerspace">
+                <a href="about_us.html">About Us</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh6mxQpbQfLExG7o7IjPGaYtDYuMu-tAUPUraE3QAIv-HQeg/viewform?usp=sf_link" target="_blank">Contact Us!</a>
+            </div>
         </footer>
-
+        
         <script>
             $(document).ready(function() {
                 $( ".accordion" ).accordion({
@@ -147,6 +178,16 @@
                 });
                 $( "#tabs" ).tabs();
                 });
+            
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
         </script>
     </body>
 </html>
