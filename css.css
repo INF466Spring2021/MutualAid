@@ -283,69 +283,365 @@ input[type=submit]:hover {
 
 /** media queries**/
 
-@media screen and (max-width: 1820px) {
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 50px;
-    }
-}
-
-@media screen and (max-width: 1620px) {
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 40px;
-    }
-}
-
-@media screen and (max-width: 1555px) {
-    .sidenav a {
-        font-size: 20px;
+/** ********mobile devices******** **/
+@media screen and (max-width: 500px) {
+    .sidenav {
+        display: none;
     }
 
-    .intraDiv {
-        display: inline-block;
-        margin: 15px 30px;
-    }
-}
-
-@media screen and (max-width: 1350px) {
-    .sidenav a {
-        font-size: 18px;
+    #tabs {
+        margin-top: 0;
     }
 
-    .intraDiv {
-        display: block;
-        margin: 35px 0;
-        width: 100%;
-        white-space: nowrap;
-        text-align: center;
+    main {
+        margin: 0 10px;
     }
-}
 
-@media screen and (max-width: 1165px) {
-    .sidenav a {
+    header {
+        position: relative;
+        display: none;
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    h1 {
+        margin: 0;
+        padding-top: 15px;
+        padding-left: 35px;
+        text-align: block;
+        font-size: 28px;
+    }
+
+    .mobileMANM {
+        font-size: 32px;
+        padding-top: 15px;
+    }
+
+    footer a {
+        margin: 0 20px;
+        padding: 5px 20px;
         font-size: 16px;
     }
-    .topbutton {
-    bottom:120px;
-    right:0px;
-    position: fixed;
-    opacity:0.8;
+
+    footer {
+      left: 0px;
+      margin-top: 100px;
+      position: absolute;
+      bottom: 0px;
     }
-    
-    .topbutton a {
-    width:25px;
-    text-decoration:none;
-    padding: 4px 8px;
-    background-color:#e0e0de;
-    font-size:12px;
-    border-radius:150px;
-    border: 1px solid #e0e0de;
-    
+
+    .logo {
+        position: absolute;
+        width: 30%;;
+        z-index: 2;
+        float: left;
+    }
+
+    #text {
+        display: none;
+    }
+
+    .fourpanelnavi {
+        padding-top: 30px;
+        flex-direction: column;
+        display: flex;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .panels{
+        flex: 1;
+        border: 1px solid yellow;
+        margin:10px;
+    }
+
+    .desktopNav {
+        display: none;
+    }
+
+    .wheretostartlink {
+        display: block;
+    }
+
+    .section {
+        scroll-margin-top: 0;
+    }
+
+    .topbutton {
+        position: sticky;
+        float: right;
+        bottom: 0;
+        padding-bottom: 15px;
+    }
+
+    .mobilesidenav {
+        display: block;
+        background-color: #8ddece;
+        clear: both;
+        overflow-x: hidden;
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin: 0px 0px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .mobilesidenav a {
+        padding: 20px 8px 20px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+        text-align: center;
+    }
+
+    #mobileHeader {
+        display: block;
+    }
+
+    /* Style the navigation menu */
+    .mobileNav {
+        overflow: hidden;
+        background-color: #1abc9c;
+        position: static;
+        background: rgb(26, 188, 156, .9);
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .mobileNav #myLinks {
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .mobileNav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px;
+        display: block;
+        text-align: center;
+    }
+
+    /* Style the hamburger menu */
+    .mobileNav a.icon {
+        background-color: #1abc9c;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 30px;
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: #1abc9c;
+        color: white;
+        text-align: center;
+        margin-top: -10px;
+        pointer-events: none;
+    }
+
+    .bars div {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    .mobileHeadContainer {
+        width: 100%;
+        height: 100px;
+    }
+
+    .mobilePageTitle {
+        width: 50%;
+        margin-left: 25%;
     }
 }
 
-@media screen and (max-width: 1051px) {
+/** ********iPads, Tablets******** **/
+@media screen and (max-width: 800px) {
+    .sidenav {
+        display: none;
+    }
+
+    #tabs {
+        margin-top: 0;
+    }
+
+    main {
+        margin: 0 10px;
+    }
+
+    header {
+        position: relative;
+        display: none;
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    h1 {
+        margin: 0;
+        padding-top: 15px;
+        padding-left: 35px;
+        text-align: block;
+        font-size: 28px;
+    }
+
+    .mobileMANM {
+        font-size: 32px;
+        padding-top: 15px;
+    }
+
+    footer a {
+        margin: 0 20px;
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+
+    footer {
+      left: 0px;
+      margin-top: 100px;
+      position: absolute;
+      bottom: 0px;
+    }
+
+    .logo {
+        position: absolute;
+        width: 30%;;
+        z-index: 2;
+        float: left;
+    }
+
+    #text {
+        display: none;
+    }
+
+    .fourpanelnavi {
+        padding-top: 30px;
+        flex-direction: column;
+        display: flex;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .panels{
+        flex: 1;
+        border: 1px solid yellow;
+        margin:10px;
+    }
+
+    .desktopNav {
+        display: none;
+    }
+
+    .wheretostartlink {
+        display: block;
+    }
+
+    .section {
+        scroll-margin-top: 0;
+    }
+
+    .topbutton {
+        position: sticky;
+        float: right;
+        bottom: 0;
+        padding-bottom: 15px;
+    }
+
+    .mobilesidenav {
+        display: block;
+        background-color: #8ddece;
+        clear: both;
+        overflow-x: hidden;
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin: 0px 0px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .mobilesidenav a {
+        padding: 20px 8px 20px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+        text-align: center;
+    }
+
+    #mobileHeader {
+        display: block;
+    }
+
+    /* Style the navigation menu */
+    .mobileNav {
+        overflow: hidden;
+        background-color: #1abc9c;
+        position: static;
+        background: rgb(26, 188, 156, .9);
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .mobileNav #myLinks {
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .mobileNav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px;
+        display: block;
+        text-align: center;
+    }
+
+    /* Style the hamburger menu */
+    .mobileNav a.icon {
+        background-color: #1abc9c;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 30px;
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: #1abc9c;
+        color: white;
+        text-align: center;
+        margin-top: -10px;
+        pointer-events: none;
+    }
+
+    .bars div {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    .mobileHeadContainer {
+        width: 100%;
+        height: 100px;
+    }
+
+    .mobilePageTitle {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+/** *******small screens, laptops******** **/
+@media screen and (max-width: 1024px) {
     .sidenav {
         width: 100%;
         height: auto;
@@ -440,5 +736,50 @@ input[type=submit]:hover {
     border-radius:150px;
     border: 1px solid #e0e0de;
     
+    }
+}
+
+/** ********Desktops, large screens******** **/
+@media screen and (max-width: 1200px) {
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    .intraDiv {
+        display: block;
+        margin: 35px 0;
+        width: 100%;
+        white-space: nowrap;
+        text-align: center;
+    }
+    
+    .topbutton {
+    bottom:120px;
+    right:0px;
+    position: fixed;
+    opacity:0.8;
+    }
+    
+    .topbutton a {
+    width:25px;
+    text-decoration:none;
+    padding: 4px 8px;
+    background-color:#e0e0de;
+    font-size:12px;
+    border-radius:150px;
+    border: 1px solid #e0e0de;
+    
+    }
+}
+
+/** ********extra large screens, tv******** **/
+@media screen and (min-width: 1201px) {
+    .sidenav a {
+        font-size: 20px;
+    }
+
+    .intraDiv {
+        display: inline-block;
+        margin: 15px 30px;
     }
 }
