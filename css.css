@@ -211,10 +211,21 @@ h1 {
 
 /**Back to top buttons**/
 .topbutton {
-    bottom: 120px;
-    right: 0px;
+    bottom: 110px;
+    right: 10px;
     position: fixed;
     opacity: 0.8;
+}
+
+#totopbutton {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 30px;
+  width: 30px;
 }
 
 .topbutton a {
