@@ -211,10 +211,21 @@ h1 {
 
 /**Back to top buttons**/
 .topbutton {
-    bottom: 120px;
-    right: 0px;
+    bottom: 110px;
+    right: 10px;
     position: fixed;
     opacity: 0.8;
+}
+
+#totopbutton {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 30px;
+  width: 30px;
 }
 
 .topbutton a {
@@ -263,6 +274,12 @@ footer {
     z-index: 2;
 }
 
+.footerspace {
+
+  margin-top: 3%;
+
+}
+
 footer a {
     width: 150px;
     text-decoration:none;
@@ -288,7 +305,7 @@ footer a:hover {
     .intraDiv {
         margin: 0 3px;
     }
-    
+
     .intraLink {
         padding: 7px 10px;
     }
@@ -306,7 +323,7 @@ footer a:hover {
         white-space: nowrap;
         text-align: center;
     }
-    
+
     .topbutton a {
         width:25px;
         padding: 4px 8px;
@@ -376,18 +393,18 @@ footer a:hover {
         width: 50%;
         margin-left: 25%;
     }
-    
+
     .topbutton {
         position: sticky;
         float: right;
         bottom: 0;
         padding-bottom: 15px;
     }
-    
+
     .wheretostartlink {
         display: block;
     }
-    
+
     .desktopNav {
         display: none;
     }
