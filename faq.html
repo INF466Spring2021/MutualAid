@@ -21,19 +21,19 @@
     </head>
 
     <body>
-
+        
         <!-- Header Desktop -->
         <header>
             <div class="headContainer">
                 <div class="logo">
-                    <img src="placeholders/fistbump.png">
+                    <img src="placeholders/fistbump.png" alt="">
                 </div>
                 <div class="pageTitle">
                     <h1>FAQ</h1>
                 </div>
             </div>
         </header>
-
+        
         <!-- Navi Computer-->
         <nav class="sidenav">
             <a href="homepage.html">Home</a>
@@ -42,12 +42,12 @@
             <a href="mutualaidnearme.html">Mutual Aid Near Me</a>
             <a href="#">FAQ</a>
         </nav>
-
+        
         <!-- Header + Navi Mobile -->
         <header id="mobileHeader">
             <div>
                 <div class="logo">
-                    <img src="placeholders/leaf.jpg" alt="">
+                    <img src="placeholders/fistbump.png" alt="">
                 </div>
                 <div class="mobilePageTitle">
                     <h1 style="padding-top: 20%;">FAQ</h1>
@@ -75,7 +75,7 @@
                 </div>
             </div>
         </header>
-
+        
         <main>
             <div id="tabs">
                 <ul>
@@ -104,10 +104,10 @@
 
                     </div>
                 </div>
-
-            <div class="topbutton">  <a href="#">Back to top</a></div>
+            
+            <div class="topbutton"><button id="totopbutton">▲</button></div>
             </div>
-
+            
         </main>
 
         <footer>
@@ -126,7 +126,7 @@
                 });
                 $( "#tabs" ).tabs();
             });
-
+            
             /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
             function myFunction() {
                 var x = document.getElementById("myLinks");
