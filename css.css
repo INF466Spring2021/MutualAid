@@ -110,6 +110,9 @@ h2 {
     display: none;
 }
 
+.smallMenu {
+    display: none;
+}
 /****************************************** CSS for mutualaidnearme ******************************************/
 
 
@@ -409,13 +412,6 @@ footer a:hover {
         display: block;
     }
     
-    .wheretostartlink .intraLink {
-        display: flex;
-        justify-content: space-around;
-        padding: 5px 0;
-        margin: 0 30px;
-    }
-    
     .mobilesidenav {
         display: block;
         background-color: #8ddece;
@@ -545,6 +541,17 @@ footer a:hover {
 }
 
 /** ********mobile devices******** **/
-@media screen and (max-width: 500px) {
-
+@media screen and (max-width: 600px) {
+    .wheretostartlink {
+        display: none;
+    }
+    
+    .smallMenu {
+        display: block;
+    }
+    
+    .smallMenu .intraLink {
+        display: inline-block;
+        width: 100%;
+    }
 }
