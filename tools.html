@@ -45,12 +45,12 @@
 
         <!-- Header + Navi Mobile -->
         <header id="mobileHeader">
-            <div>
+            <div class="mobileHeadContainer">
                 <div class="logo">
-                    <img src="placeholders/leaf.jpg" alt="">
+                    <img src="placeholders/fistbump.png" alt="">
                 </div>
                 <div class="mobilePageTitle">
-                    <h1 style="padding-top: 20%;">Tools</h1>
+                    <h1>Tools</h1>
                 </div>
                 <div class="mobileNav">
                     <a href="#home" class="active"></a>
@@ -158,7 +158,7 @@
                 </div>
             </div>
 
-            div class="topbutton"><button id="totopbutton">▲</button></div>
+            <div class="topbutton"><button id="totopbutton">▲</button></div>
 
         </main>
 
@@ -188,6 +188,19 @@
                     x.style.display = "block";
                 }
             }
+
+            //back to top button
+
+            var totopbutton = document.getElementById("totopbutton")
+            var rootElement = document.documentElement
+
+            function gototop() {
+              rootElement.scrollTo({
+                top: 0,
+                behavior: "smooth"
+              })
+            }
+            totopbutton.addEventListener("click", gototop)
         </script>
     </body>
 </html>

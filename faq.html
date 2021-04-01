@@ -47,7 +47,7 @@
         <header id="mobileHeader">
             <div>
                 <div class="logo">
-                    <img src="placeholders/leaf.jpg" alt="">
+                    <img src="placeholders/fistbump.png" alt="">
                 </div>
                 <div class="mobilePageTitle">
                     <h1 style="padding-top: 20%;">FAQ</h1>
@@ -136,6 +136,19 @@
                     x.style.display = "block";
                 }
             }
+
+            //back to top button
+
+            var totopbutton = document.getElementById("totopbutton")
+            var rootElement = document.documentElement
+
+            function gototop() {
+              rootElement.scrollTo({
+                top: 0,
+                behavior: "smooth"
+              })
+            }
+            totopbutton.addEventListener("click", gototop)
         </script>
     </body>
 </html>
