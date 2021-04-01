@@ -39,7 +39,6 @@
 }
 
 
-
 /****************************************** CSS for wheretostart ******************************************/
 
 .intraLink {
@@ -222,14 +221,14 @@ h1 {
 }
 
 #totopbutton {
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 30px;
-  width: 30px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 30px;
+    width: 30px;
 }
 
 .topbutton a {
@@ -278,12 +277,6 @@ footer {
     z-index: 2;
 }
 
-.footerspace {
-
-  margin-top: 3%;
-
-}
-
 footer a {
     width: 150px;
     text-decoration:none;
@@ -300,7 +293,7 @@ footer a:hover {
 }
 
 .footerspace {
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 
@@ -309,7 +302,7 @@ footer a:hover {
     .intraDiv {
         margin: 0 3px;
     }
-
+    
     .intraLink {
         padding: 7px 10px;
     }
@@ -327,7 +320,7 @@ footer a:hover {
         white-space: nowrap;
         text-align: center;
     }
-
+    
     .topbutton a {
         width:25px;
         padding: 4px 8px;
@@ -338,12 +331,11 @@ footer a:hover {
 /** *******small screens, laptops******** **/
 @media screen and (max-width: 1024px) {
     .sidenav {
-        width: 100%;
-        height: auto;
-        position: relative;
-        margin: 0;
-        top: 0;
-        left: 0;
+        display: none;
+    }
+
+    header {
+        display: none;
     }
 
     #tabs {
@@ -356,11 +348,7 @@ footer a:hover {
     }
 
     main {
-        margin: 0 10px;
-    }
-
-    header {
-        position: relative;
+        margin-left: 0;
     }
 
     .spacer {
@@ -369,7 +357,8 @@ footer a:hover {
 
     h1 {
         margin: 0;
-        padding-top: 25px;
+        font-size: 55px;
+        padding-top: 10px;
     }
 
     footer a {
@@ -397,69 +386,23 @@ footer a:hover {
         width: 50%;
         margin-left: 25%;
     }
-
+    
     .topbutton {
         position: sticky;
         float: right;
         bottom: 0;
         padding-bottom: 15px;
     }
-
+    
     .wheretostartlink {
         display: block;
     }
-
+    
     .desktopNav {
         display: none;
     }
-}
-
-/** ********iPads, Tablets******** **/
-@media screen and (max-width: 800px) {
-    .sidenav {
-        display: none;
-    }
-
-    header {
-        display: none;
-    }
-
-    h1 {
-        padding-top: 15px;
-        padding-left: 35px;
-        font-size: 28px;
-    }
-
-    .mobileMANM {
-        font-size: 32px;
-        padding-top: 15px;
-    }
-
-    .logo {
-        width: 30%;;
-        z-index: 2;
-        float: left;
-    }
-
-    #text {
-        display: none;
-    }
-
-    .fourpanelnavi {
-        flex-direction: column;
-        width: 50%;
-        margin-left: 25%;
-    }
-
-    .desktopNav {
-        display: none;
-    }
-
-    .section {
-        scroll-margin-top: 0;
-    }
-
-    .mobilesidenav {
+    
+        .mobilesidenav {
         display: block;
         background-color: #8ddece;
         clear: both;
@@ -543,6 +486,44 @@ footer a:hover {
         width: 50%;
         margin-left: 25%;
     }
+}
+
+/** ********iPads, Tablets******** **/
+@media screen and (max-width: 800px) {
+    .sidenav {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+    
+    h1 {
+        padding-top: 15px;
+        padding-left: 35px;
+        font-size: 28px;
+    }
+
+    .logo {
+        width: 30%;;
+        z-index: 2;
+        float: left;
+    }
+
+    #text {
+        display: none;
+    }
+
+    .fourpanelnavi {
+        flex-direction: column;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .section {
+        scroll-margin-top: 0;
+    }
+
 }
 
 /** ********mobile devices******** **/
