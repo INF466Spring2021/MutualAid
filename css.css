@@ -106,6 +106,10 @@ h2 {
     scroll-margin-top: 100px;
 }
 
+.twoLayerNav {
+    display: none;
+}
+
 /****************************************** CSS for mutualaidnearme ******************************************/
 
 
@@ -312,19 +316,26 @@ footer a:hover {
     .sidenav a {
         font-size: 20px;
     }
-
-    .intraDiv {
-        display: block;
-        margin: 20px 0px;
-        width: 100%;
-        white-space: nowrap;
-        text-align: center;
-    }
     
     .topbutton a {
         width:25px;
         padding: 4px 8px;
         font-size:12px;
+    }
+    
+    .desktopNav {
+        display: none;
+    }
+    
+    .twoLayerNav {
+        display: block;
+    }
+    
+    .topLayer, .bottomLayer{
+        display: flex;
+        justify-content: space-around;
+        padding: 5px 0;
+        margin: 0 30px;
     }
 }
 
@@ -398,11 +409,14 @@ footer a:hover {
         display: block;
     }
     
-    .desktopNav {
-        display: none;
+    .wheretostartlink .intraLink {
+        display: flex;
+        justify-content: space-around;
+        padding: 5px 0;
+        margin: 0 30px;
     }
     
-        .mobilesidenav {
+    .mobilesidenav {
         display: block;
         background-color: #8ddece;
         clear: both;
@@ -485,6 +499,10 @@ footer a:hover {
     .mobilePageTitle {
         width: 50%;
         margin-left: 25%;
+    }
+    
+    .twoLayerNav {
+        display: none;
     }
 }
 
