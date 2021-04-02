@@ -219,25 +219,23 @@ h1 {
 }
 
 /**Back to top buttons**/
-.topbutton {
-    bottom: 110px;
-    right: 10px;
-    position: fixed;
-    opacity: 0.8;
-}
 
 #totopbutton {
-    background-color: white;
-    color: black;
+    background-color: #1abc9c;
+    color: white;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     font-size: 16px;
     line-height: 30px;
     width: 30px;
+    bottom: 110px;
+    right: 10px;
+    position: fixed;
+    opacity: 0.8;
 }
 
-.topbutton a {
+#totopbutton a {
     width: 50px;
     text-decoration:none;
     padding: 10px 15px;
@@ -247,7 +245,7 @@ h1 {
     border: 3px solid #e0e0de;
 }
 
-.topbutton a:hover {
+#totopbutton a:hover {
     border: 3px solid black;
 }
 
@@ -319,7 +317,7 @@ footer a:hover {
         font-size: 20px;
     }
     
-    .topbutton a {
+    #totopbutton a {
         width:25px;
         padding: 4px 8px;
         font-size:12px;
@@ -339,12 +337,14 @@ footer a:hover {
         padding: 5px 0;
         margin: 0 30px;
     }
-}
-h1 {
+    
+    h1 {
         margin: 0;
         font-size: 60px;
         padding-top: 10px;
     }
+}
+
 /** *******small screens, laptops******** **/
 @media screen and (max-width: 1024px) {
     .sidenav {
@@ -404,11 +404,9 @@ h1 {
         margin-left: 25%;
     }
     
-    .topbutton {
-        position: sticky;
+    #totopbutton {
         float: right;
-        bottom: 0;
-        padding-bottom: 15px;
+        bottom: 110px;
     }
     
     .wheretostartlink {
