@@ -134,7 +134,20 @@
                 } else {
                     x.style.display = "block";
                 }
+                
             }
+            
+            //back to top button
+            var totopbutton = document.getElementById("totopbutton")
+            var rootElement = document.documentElement
+
+            function gototop() {
+              rootElement.scrollTo({
+                top: 0,
+                behavior: "smooth"
+              })
+            }
+            totopbutton.addEventListener("click", gototop)
         </script>
     </body>
 </html>
