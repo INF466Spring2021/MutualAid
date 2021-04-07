@@ -4,7 +4,7 @@
 
         <!-- Meta Info-->
         <meta charset="utf-8">
-        <title>About Us</title>
+        <title>About</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="">
@@ -19,12 +19,16 @@
 
     <body>
 
-        <!-- Header -->
+        <!-- Header Desktop -->
         <header>
-            <div class="logo">
-                <img src="placeholders/fistbump.png">
+            <div class="headContainer">
+                <div class="logo">
+                    <img src="placeholders/fistbump.png" alt="">
+                </div>
+                <div class="pageTitle">
+                    <h1>About Us</h1>
+                </div>
             </div>
-            <h1>About Us</h1>
         </header>
 
         <!-- Navi Computer-->
@@ -38,13 +42,14 @@
         </nav>
 
         <!-- Header + Navi Mobile -->
+        
         <header id="mobileHeader">
-            <div>
+            <div class="mobileHeadContainer">
                 <div class="logo">
                     <img src="placeholders/fistbump.png" alt="">
                 </div>
                 <div class="mobilePageTitle">
-                    <h1 style="padding-top: 20%;">About Us</h1>
+                    <h1>About Us</h1>
                 </div>
                 <div class="mobileNav">
                     <a href="#home" class="active"></a>
@@ -52,7 +57,7 @@
                     <!-- Navigation links (hidden by default) -->
                     <div id="myLinks">
                         <a href="homepage.html">Home</a>
-                        <a href="wheretostart.html">Where to Start</a>
+                        <a href="#">Where to Start</a>
                         <a href="tools.html">Tools</a>
                         <a href="mutualaidnearme.html">Mutual Aid Near Me</a>
                         <a href="faq.html">FAQ</a>
@@ -69,28 +74,37 @@
                 </div>
             </div>
         </header>
-
+        
         <main>
-            <div id="aboutus">
+            <div>
            <h2> Our Aims</h2>
-            <p> Hello! This website was created in collaboration with Albany Law School and SUNY Albany.</p>
-            <p>The purpose of this site is to have one central place for all your mutual aid questions and needs. While this information can be found in other places online, there was no one place that had all of the information. This is where we come in. We have taken the time to put it together all the necessary information about mutual aid societies on one convenient website. </p>
-            <br>
-           <h2> Who we are</h2>
-            <p> This project was supervised by Professor Brescia from Albany Law and Christopher Velez and Norman Gervais from SUNY ALbany.</p>
-
-            <p> This website's content was created by Rory Butler and Amanda Hunter from Albany Law. The website's design was created by Jocelyn Chan, Zachary Taylor, and Katherine Amoresano from SUNY Albany. </p>
-
-            <p> Thank you for taking the time to checkout our website!</p>
+            <p>The purpose of this site is to have one central place for all your mutual aid questions and needs. While this information can be found in other places online, there was no one place that had all of the information. This is where we come in. We have taken the time to put together all the necessary information about mutual aid societies on one convenient website. </p>
+            
+            
+            <div class="aboutus">
+            <p> * This website's content was created by Rory Butler and Amanda Hunter from Albany Law. The website was designed, built and developed by Jocelyn Chan, Zachary Taylor, and Katherine Amoresano from SUNY Albany. If you have questions about the content please refer to Contact Us. </p>
+            </div>
             </div>
        </main>
-
+        
         <footer>
-          <div class="footerspace">
-            <a href="about_us.html">About Us</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh6mxQpbQfLExG7o7IjPGaYtDYuMu-tAUPUraE3QAIv-HQeg/viewform?usp=sf_link" target="_blank">Contact Us!</a>
-          </div>
+            <div class="footerspace">
+                <a href="about_us.html">About Us</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh6mxQpbQfLExG7o7IjPGaYtDYuMu-tAUPUraE3QAIv-HQeg/viewform?usp=sf_link" target="_blank">Contact Us!</a>
+            </div>
         </footer>
-
+        
+        <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+        
     </body>
 </html>
