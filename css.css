@@ -124,14 +124,10 @@ h2 {
 
 
 /****************************************** CSS for about us ******************************************/
-
-#aboutus {
-    margin: 120px auto 0;
-    padding: 0 10px;
-    max-width: 800px;
+.aboutus {
+    position:absolute;
+    bottom:100px;
 }
-
-
 
 /****************************************** CSS for faq ******************************************/
 
@@ -223,7 +219,7 @@ header {
 h1 {
     text-align: center;
     margin-top: 5px;
-    font-size: 75px;
+    font-size: 70px;
 }
 
 /**Back to top buttons**/
