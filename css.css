@@ -79,7 +79,7 @@ h2 {
 }
 
 .collapsible {
-    background-color: #1abc9c;
+    background-color: #8ddece;
     color: black;
     cursor: pointer;
     padding: 18px;
@@ -91,7 +91,7 @@ h2 {
 }
 
 .collapsibleActive, .collapsible:hover {
-    background-color: #1dcfab;
+    background-color: #1abc9c;
 }
 
 .collapsibleContent {
@@ -378,22 +378,22 @@ footer a:hover {
         text-align: center;
         max-width: 90%;
     }
-    
+
     .desktopNav {
         display: none;
     }
-    
+
     .twoLayerNav {
         display: block;
     }
-    
+
     .topLayer, .bottomLayer{
         display: flex;
         justify-content: space-around;
         padding: 5px 0;
         margin: 0 30px;
     }
-    
+
     h1 {
         margin: 0;
         font-size: 60px;
@@ -406,7 +406,7 @@ footer a:hover {
     .sidenav {
         display: none;
     }
-    
+
     header {
         display: none;
     }
@@ -434,7 +434,7 @@ footer a:hover {
 
     h1 {
         margin: 0;
-        font-size: 55px;
+        font-size: 45px;
         padding-top: 10px;
     }
 
@@ -485,7 +485,7 @@ footer a:hover {
         bottom: 0;
         padding-bottom: 15px;
     }
-    
+
     #totopbutton {
         float: right;
         bottom: 110px;
@@ -498,7 +498,7 @@ footer a:hover {
     .desktopNav {
         display: none;
     }
-    
+
     .mobilesidenav {
         display: block;
         background-color: #8ddece;
@@ -583,7 +583,7 @@ footer a:hover {
         width: 50%;
         margin-left: 25%;
     }
-    
+
     .twoLayerNav {
         display: none;
     }
@@ -714,7 +714,7 @@ footer a:hover {
 
     .bars div {
         width: 35px;
-        height: 5px;
+        height: 4px;
         background-color: black;
         margin: 6px 0;
     }
@@ -740,11 +740,11 @@ footer a:hover {
     .wheretostartlink {
         display: none;
     }
-    
+
     .smallMenu {
         display: block;
     }
-    
+
     .smallMenu .intraLink {
         display: inline-block;
         width: 100%;
