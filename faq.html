@@ -21,28 +21,28 @@
     </head>
 
     <body>
-
+        
         <!-- Header Desktop -->
         <header>
             <div class="headContainer">
                 <div class="logo">
-                    <img src="placeholders/fistbump.png">
+                    <img src="placeholders/fistbump.png" alt="">
                 </div>
                 <div class="pageTitle">
                     <h1>FAQ</h1>
                 </div>
             </div>
         </header>
-
+        
         <!-- Navi Computer-->
         <nav class="sidenav">
-            <a href="homepage.html">Home</a>
-            <a href="wheretostart.html">Where to Start</a>
+            <a href="index.html">Home</a>
+            <a href="start.html">Where to Start</a>
             <a href="tools.html">Tools</a>
-            <a href="mutualaidnearme.html">Mutual Aid Near Me</a>
+            <a href="locations.html">Mutual Aid Near Me</a>
             <a href="#">FAQ</a>
         </nav>
-
+        
         <!-- Header + Navi Mobile -->
         <header id="mobileHeader">
             <div>
@@ -50,17 +50,17 @@
                     <img src="placeholders/fistbump.png" alt="">
                 </div>
                 <div class="mobilePageTitle">
-                    <h1 style="padding-top: 20%;">FAQ</h1>
+                    <h1>FAQ</h1>
                 </div>
                 <div class="mobileNav">
                     <a href="#home" class="active"></a>
 
                     <!-- Navigation links (hidden by default) -->
                     <div id="myLinks">
-                        <a href="homepage.html">Home</a>
-                        <a href="wheretostart.html">Where to Start</a>
+                        <a href="index.html">Home</a>
+                        <a href="start.html">Where to Start</a>
                         <a href="tools.html">Tools</a>
-                        <a href="mutualaidnearme.html">Mutual Aid Near Me</a>
+                        <a href="locations.html">Mutual Aid Near Me</a>
                         <a href="#">FAQ</a>
                     </div>
 
@@ -75,39 +75,28 @@
                 </div>
             </div>
         </header>
-
+        
         <main>
-            <div id="tabs">
-                <ul>
-                    <li><a href="#tabs-1">Practical</a></li>
-                </ul>
-                <div id="tabs-1">
-                    <div class="accordion">
-                        <h3>Do I have to incorporate my mutual aid society right away?</h3>
-                        <div>
-                            <p>
-                            No. If while operating your mutual aid society you decide to incorporate you can do so despite being active prior to incorporating. However the benefits of incorporation will not apply retroactively to activities prior to incorporation.
-                            </p>
-                        </div>
-                        <h3>Do I have to have a Board of Directors?</h3>
-                        <div>
-                            <p>
-                            If you are incorporated then you will need to have a board of directors. If you are not incorporated then you will not be required to have one.
-                            </p>
-                        </div>
-                        <h3>Do I have to have a conflict of interest policy?</h3>
-                        <div>
-                            <p>
-                            *Question not answered in word document*
-                            </p>
-                        </div>
-
-                    </div>
+            <div class="accordion">
+                <h3>Do I have to incorporate my mutual aid society right away?</h3>
+                <div>
+                    <p>
+                    No. If while operating your mutual aid society you decide to incorporate you can do so despite being active prior to incorporating. However the benefits of incorporation will not apply retroactively to activities prior to incorporation.
+                    </p>
                 </div>
-
-            <div class="topbutton"><button id="totopbutton">▲</button></div>
+                <h3>Do I have to have a Board of Directors?</h3>
+                <div>
+                    <p>
+                    If you are incorporated then you will need to have a board of directors. If you are not incorporated then you will not be required to have one.
+                    </p>
+                </div>
+                <h3>Do I have to have a conflict of interest policy?</h3>
+                <div>
+                    <p>
+                    *Question not answered in word document*
+                    </p>
+                </div>
             </div>
-
         </main>
 
         <footer>
@@ -126,7 +115,7 @@
                 });
                 $( "#tabs" ).tabs();
             });
-
+            
             /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
             function myFunction() {
                 var x = document.getElementById("myLinks");
@@ -136,19 +125,6 @@
                     x.style.display = "block";
                 }
             }
-
-            //back to top button
-
-            var totopbutton = document.getElementById("totopbutton")
-            var rootElement = document.documentElement
-
-            function gototop() {
-              rootElement.scrollTo({
-                top: 0,
-                behavior: "smooth"
-              })
-            }
-            totopbutton.addEventListener("click", gototop)
         </script>
     </body>
 </html>
