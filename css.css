@@ -80,8 +80,8 @@ h2 {
 }
 
 .collapsible {
-    background-color: #777;
-    color: white;
+    background-color: #1abc9c;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -92,7 +92,7 @@ h2 {
 }
 
 .collapsibleActive, .collapsible:hover {
-    background-color: #555;
+    background-color: #1dcfab;
 }
 
 .collapsibleContent {
