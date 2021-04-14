@@ -19,39 +19,25 @@
 
     <body>
         <header>
-            <div class="headContainer">
-                <div class="logo">
-                    <img src="placeholders/fistbump.png" alt="">
-                </div>
-                <div class="pageTitle">
-                    <h1>About Us</h1>
-                </div>
-            </div>
-        </header>
-
-        <!-- Navi Computer-->
-
-        <nav class="sidenav">
-            <a href="index.html">Home</a>
-            <a href="start.html">Where to Start</a>
-            <a href="tools.html">Tools</a>
-            <a href="locations.html">Mutual Aid Near Me</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
-
-        <!-- Header + Navi Mobile -->
-
-        <header id="mobileHeader">
-            <div class="mobileHeadContainer">
+            <div>
                 <div class="logo">
                     <img src="placeholders/fistbump.png" alt="">
                 </div>
                 <div>
-                    <h1>Where to Start</h1>
+                    <h1>About Us</h1>
                 </div>
                 <div class="mobileNav">
                     <a href="#home" class="active"></a>
-
+                    
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <div class="bars">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    </a>
+                    
                     <!-- Navigation links (hidden by default) -->
                     <div id="myLinks">
                         <a href="index.html">Home</a>
@@ -61,18 +47,19 @@
                         <a href="faq.html">FAQ</a>
                     </div>
 
-                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <div class="bars">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    </a>
                 </div>
             </div>
         </header>
-
+        
+        <!-- Navi Desktop -->
+        
+        <nav class="sidenav">
+            <a href="index.html">Home</a>
+            <a href="#">Where to Start</a>
+            <a href="tools.html">Tools</a>
+            <a href="locations.html">Mutual Aid Near Me</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
         <main>
             <div>
            <h2> Our Aims</h2>
