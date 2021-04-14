@@ -150,11 +150,13 @@ h2 {
 main {
     margin: 100px 3% 0 16%;
     padding: 10px;
+    line-height: 30px;
 }
 
 body{
     background-color: #e8f8f5;
     margin: 0 0 100px;
+    font-family: sans-serif;
 }
 
 html {
@@ -241,6 +243,7 @@ h1 {
 
 p {
     font-size: 18px;
+    width: 90%;
 }
 
 li {
