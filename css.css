@@ -65,7 +65,7 @@ h2 {
 }
 
 .collapsible {
-    background-color: #8ddece;
+    background-color: #8ddece;;
     color: black;
     cursor: pointer;
     padding: 18px;
@@ -310,13 +310,13 @@ footer a:hover {
     .sidenav a {
         font-size: 20px;
     }
-
+    
     #totopbutton a {
         width: 25px;
         padding: 4px 8px;
         font-size: 12px;
     }
-
+    
     /**This is the div that holds all the panels div**/
     .fourpanelnavi {
         padding-top: 30px;
@@ -325,36 +325,15 @@ footer a:hover {
         flex-wrap: wrap;
         align-items: flex-start
     }
-
+    
     /**This is the panels, margin is used for the space in between them. Border can be got rid off.**/
     .panels{
         flex-basis: 34%;
-        margin:10px;
+        margin: 10px;
         width: 200px;
         height: auto;
     }
-
-    .panelimage {
-        position: relative;
-        text-align: center;
-        max-width: 90%;
-    }
-
-    .desktopNav {
-        display: none;
-    }
-
-    .twoLayerNav {
-        display: block;
-    }
-
-    .topLayer, .bottomLayer{
-        display: flex;
-        justify-content: space-around;
-        padding: 5px 0;
-        margin: 0 30px;
-    }
-
+    
     h1 {
         margin: 0;
         font-size: 60px;
@@ -369,11 +348,7 @@ footer a:hover {
     .sidenav {
         display: none;
     }
-
-    header {
-        display: none;
-    }
-
+    
     #tabs {
         margin-top: 0;
     }
@@ -383,9 +358,7 @@ footer a:hover {
     }
 
     h1 {
-        margin: 0;
         font-size: 45px;
-        padding-top: 10px;
     }
 
     footer a {
@@ -406,51 +379,10 @@ footer a:hover {
     .panelimage {
         max-width: 80%;
     }
-
-    .topbutton {
-        position: sticky;
-        float: right;
-        bottom: 0;
-        padding-bottom: 15px;
-    }
-
+    
     #totopbutton {
         float: right;
         bottom: 110px;
-    }
-
-    .wheretostartlink {
-        display: block;
-    }
-
-    .desktopNav {
-        display: none;
-    }
-
-    .mobilesidenav {
-        display: block;
-        background-color: #8ddece;
-        clear: both;
-        overflow-x: hidden;
-        width: 100%;
-        height: auto;
-        position: relative;
-        margin: 0px 0px;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-
-    .mobilesidenav a {
-        padding: 20px 8px 20px 16px;
-        text-decoration: none;
-        font-size: 25px;
-        display: block;
-        text-align: center;
-    }
-
-    #mobileHeader {
-        display: block;
     }
 
     /* Style the navigation menu */
@@ -502,17 +434,17 @@ footer a:hover {
         background-color: black;
         margin: 6px 0;
     }
-
+    
     #faqMenu {
         margin-top: 100px;
     }
-
+    
     #tabs {
         margin-top: 100px;
     }
-
-    .twoLayerNav {
-        display: none;
+    
+    .intraNav {
+        padding-top: 100px;
     }
 }
 
@@ -536,113 +468,29 @@ footer a:hover {
     .fourpanelnavi {
         width: 100%;
     }
-
-    /* Style the navigation menu */
-    .mobileNav {
-        overflow: hidden;
-        background-color: #1abc9c;
-        position: static;
-        background: rgb(26, 188, 156, .9);
-    }
-
-    /* Hide the links inside the navigation menu (except for logo/home) */
-    .mobileNav #myLinks {
-        display: none;
-    }
-
-    /* Style navigation menu links */
-    .mobileNav a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 25px;
-        display: block;
-        text-align: center;
-    }
-
-    /* Style the hamburger menu */
-    .mobileNav a.icon {
-        background-color: #1abc9c;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding-top: 30px;
-    }
-
-    /* Style the active link (or home/logo) */
-    .active {
-        background-color: #1abc9c;
-        color: white;
-        text-align: center;
-        margin-top: -10px;
-        pointer-events: none;
+    
+    main {
+        margin: 0 5% 0 5%;
     }
 }
 
-    .bars div {
-        width: 35px;
-        height: 4px;
-        background-color: black;
-        margin: 6px 0;
-    }
 
 
-    .mobilePageTitle {
-        width: 50%;
-        margin-left: 25%;
-    }
-
-    h1 {
-        padding-top: 15px;
-        padding-left: 35px;
-        font-size: 25px;
-    }
-}
-/** ********mobile devices******** **/
+/****************************************** mobile devices ******************************************/
 @media screen and (max-width: 600px) {
     .topLayer, .bottomLayer{
         padding: 0;
         display: block;
         margin: 0;
     }
-
-    .smallMenu {
+    
+    .intraLink {
+        text-align: center;
         display: block;
         margin: 5px 0;
     }
-
-    .smallMenu .intraLink {
-        display: inline-block;
-        width: 100%;
+    
+    main {
+        margin: 0 8% 0 8%;
     }
-}
-
-/** ********mobile devices******** **/
-@media screen and (max-width: 500px) {
-
-  h1 {
-      padding-top: 15px;
-      padding-left: 35px;
-      font-size: 25px;
-  }
-
-  h2 {
-    font-size: 15px;
-    padding-left: 25px;
-  }
-
-  footer {
-    height: 80px;
-  }
-
-  .footerspace {
-      margin-top: 8%;
-  }
-
-  header {
-      height: 80px;
-  }
-
-
 }
