@@ -14,7 +14,6 @@
     margin:10px;
     width: 200px;
     height: auto;
-
 }
 
 /**This controls the position of the text and images in the panels.**/
@@ -36,8 +35,6 @@
     width: 100%;
     height: 100px;
 }
-
-
 
 /****************************************** CSS for wheretostart ******************************************/
 
@@ -114,25 +111,11 @@ h2 {
     display: none;
 }
 
-/****************************************** CSS for mutualaidnearme ******************************************/
-
-
-
-/****************************************** CSS for tools ******************************************/
-
-
-
-/****************************************** CSS for about us ******************************************/
+/****************************************** CSS for about us******************************************/
 .aboutus {
     position:absolute;
     bottom:100px;
 }
-
-/****************************************** CSS for faq ******************************************/
-
-
-
-/****************************************** CSS for Navigation ******************************************/
 
 .sidenav {
     height: 100%;
@@ -153,10 +136,7 @@ h2 {
     display: block;
 }
 
-
-
 /****************************************** CSS for every page ******************************************/
-
 main {
     margin-left: 15%;
     margin-top: 100px;
@@ -290,10 +270,6 @@ footer {
     z-index: 2;
 }
 
-.footerspace {
-    margin-top: 2%;
-}
-
 footer a {
     width: 150px;
     text-decoration:none;
@@ -312,8 +288,6 @@ footer a:hover {
 .footerspace {
     margin-top: 3%;
 }
-
-
 
 @media screen and (max-width: 1340px) {
     .intraDiv {
@@ -456,7 +430,6 @@ footer a:hover {
     #text {
         display: none;
     }
-
 
     /**This is the div that holds all the panels div**/
     .fourpanelnavi {
