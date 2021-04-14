@@ -14,7 +14,6 @@
     margin:10px;
     width: 200px;
     height: auto;
-
 }
 
 /**This controls the position of the text and images in the panels.**/
@@ -61,19 +60,6 @@ h2 {
     font-size: 30px;
 }
 
-.intraDiv {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.wheretostartlink {
-    display: none;
-}
-
-.wheretostartlink a {
-    text-decoration: none;
-}
-
 .miniquestion {
     margin-top: 60px;
 }
@@ -87,7 +73,7 @@ h2 {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .collapsibleActive, .collapsible:hover {
@@ -99,20 +85,10 @@ h2 {
     display: none;
     overflow: hidden;
     background-color: #e8f8f5;
-    text-align: center;
+    text-align: left;
 }
 
-.section {
-    scroll-margin-top: 100px;
-}
 
-.twoLayerNav {
-    display: none;
-}
-
-.smallMenu {
-    display: none;
-}
 
 /****************************************** CSS for mutualaidnearme ******************************************/
 
@@ -123,10 +99,13 @@ h2 {
 
 
 /****************************************** CSS for about us ******************************************/
+
 .aboutus {
-    position:absolute;
-    bottom:100px;
+    position: absolute;
+    bottom: 100px;
 }
+
+
 
 /****************************************** CSS for faq ******************************************/
 
@@ -153,19 +132,31 @@ h2 {
     display: block;
 }
 
+.mobileNav {
+    display: none;
+}
+
+.topLayer, .bottomLayer{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+    margin: 0 30px;
+}
+
 
 
 /****************************************** CSS for every page ******************************************/
 
 main {
-    margin-left: 15%;
-    margin-top: 100px;
+    margin: 100px 3% 0 16%;
     padding: 10px;
+    line-height: 30px;
 }
 
 body{
     background-color: #e8f8f5;
     margin: 0 0 100px;
+    font-family: sans-serif;
 }
 
 html {
@@ -218,15 +209,7 @@ header {
 h1 {
     text-align: center;
     margin-top: 5px;
-    font-size: 70px;
-}
-
-/**Back to top buttons**/
-.topbutton {
-    bottom: 110px;
-    right: 10px;
-    position: fixed;
-    opacity: 0.8;
+    font-size: 75px;
 }
 
 #totopbutton {
@@ -244,7 +227,7 @@ h1 {
     opacity: 0.8;
 }
 
-.topbutton a {
+#totopbutton a {
     width: 50px;
     text-decoration:none;
     padding: 10px 15px;
@@ -254,25 +237,19 @@ h1 {
     border: 3px solid #e0e0de;
 }
 
-.topbutton a:hover {
+#totopbutton a:hover {
     border: 3px solid black;
 }
 
 p {
     font-size: 18px;
+    width: 90%;
 }
 
 li {
     font-size: 18px;
 }
 
-.mobilesidenav {
-    display: none;
-}
-
-#mobileHeader {
-    display: none;
-}
 
 
 /****************************************** CSS for footer ******************************************/
@@ -288,10 +265,6 @@ footer {
     color: white;
     text-align: center;
     z-index: 2;
-}
-
-.footerspace {
-    margin-top: 2%;
 }
 
 footer a {
@@ -310,20 +283,13 @@ footer a:hover {
 }
 
 .footerspace {
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 
 
+/****************************************** Desktops, Even larger screens ******************************************/
 @media screen and (max-width: 1340px) {
-    .intraDiv {
-        margin: 0 3px;
-    }
-
-    .intraLink {
-        padding: 7px 10px;
-    }
-
     fourpanelnavi {
         padding-left: 30px;
     }
@@ -336,24 +302,19 @@ footer a:hover {
     }
 
 }
-/** ********Desktops, large screens******** **/
+
+
+
+/****************************************** Desktops, large screens ******************************************/
 @media screen and (max-width: 1201px) {
     .sidenav a {
         font-size: 20px;
     }
 
-    .intraDiv {
-        display: block;
-        margin: 20px 0px;
-        width: 100%;
-        white-space: nowrap;
-        text-align: center;
-    }
-
-    .topbutton a {
-        width:25px;
+    #totopbutton a {
+        width: 25px;
         padding: 4px 8px;
-        font-size:12px;
+        font-size: 12px;
     }
 
     /**This is the div that holds all the panels div**/
@@ -401,7 +362,9 @@ footer a:hover {
     }
 }
 
-/** *******small screens, laptops******** **/
+
+
+/****************************************** small screens, laptops ******************************************/
 @media screen and (max-width: 1024px) {
     .sidenav {
         display: none;
@@ -415,21 +378,8 @@ footer a:hover {
         margin-top: 0;
     }
 
-    .sidenav a {
-        text-align: center;
-        font-size: 25px;
-    }
-
     main {
-        margin: 0 10px;
-    }
-
-    header {
-        position: relative;
-    }
-
-    .spacer {
-        display: none;
+        margin: 0 3% 0 3%;
     }
 
     h1 {
@@ -453,29 +403,7 @@ footer a:hover {
         position: absolute;
     }
 
-    #text {
-        display: none;
-    }
-
-
-    /**This is the div that holds all the panels div**/
-    .fourpanelnavi {
-        padding-top: 30px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /**This is the panels, margin is used for the space in between them. Border can be got rid off.**/
-    .panels{
-        flex-basis: 34%;
-        margin:10px;
-        width: 200px;
-        height: auto;
-    }
-
     .panelimage {
-        position: relative;
-        text-align: center;
         max-width: 80%;
     }
 
@@ -527,6 +455,7 @@ footer a:hover {
 
     /* Style the navigation menu */
     .mobileNav {
+        display: block;
         overflow: hidden;
         background-color: #1abc9c;
         position: static;
@@ -574,14 +503,12 @@ footer a:hover {
         margin: 6px 0;
     }
 
-    .mobileHeadContainer {
-        width: 100%;
-        height: 100px;
+    #faqMenu {
+        margin-top: 100px;
     }
 
-    .mobilePageTitle {
-        width: 50%;
-        margin-left: 25%;
+    #tabs {
+        margin-top: 100px;
     }
 
     .twoLayerNav {
@@ -589,25 +516,14 @@ footer a:hover {
     }
 }
 
-/** ********iPads, Tablets******** **/
+
+
+/****************************************** iPads, Tablets ******************************************/
 @media screen and (max-width: 800px) {
-    .sidenav {
-        display: none;
-    }
-
-    header {
-        display: none;
-    }
-
     h1 {
         padding-top: 15px;
         padding-left: 35px;
-        font-size: 28px;
-    }
-
-    .mobileMANM {
-        font-size: 32px;
-        padding-top: 15px;
+        font-size: 30px;
     }
 
     .logo {
@@ -616,58 +532,9 @@ footer a:hover {
         float: left;
     }
 
-    #text {
-        display: none;
-    }
-
     /**This is the div that holds all the panels div**/
     .fourpanelnavi {
-        padding-top: 30px;
-        display: flex;
         width: 100%;
-        flex-wrap: wrap;
-    }
-
-    /**This is the panels, margin is used for the space in between them. Border can be got rid off.**/
-    .panels{
-        flex-basis: 34%;
-        margin:10px;
-        width: 200px;
-        height: auto;
-    }
-
-    .desktopNav {
-        display: none;
-    }
-
-    .section {
-        scroll-margin-top: 0;
-    }
-
-    .mobilesidenav {
-        display: block;
-        background-color: #8ddece;
-        clear: both;
-        overflow-x: hidden;
-        width: 100%;
-        height: auto;
-        position: relative;
-        margin: 0px 0px;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-
-    .mobilesidenav a {
-        padding: 20px 8px 20px 16px;
-        text-decoration: none;
-        font-size: 25px;
-        display: block;
-        text-align: center;
-    }
-
-    #mobileHeader {
-        display: block;
     }
 
     /* Style the navigation menu */
@@ -711,6 +578,7 @@ footer a:hover {
         margin-top: -10px;
         pointer-events: none;
     }
+}
 
     .bars div {
         width: 35px;
@@ -719,10 +587,6 @@ footer a:hover {
         margin: 6px 0;
     }
 
-    .mobileHeadContainer {
-        width: 100%;
-        height: 100px;
-    }
 
     .mobilePageTitle {
         width: 50%;
@@ -737,12 +601,15 @@ footer a:hover {
 }
 /** ********mobile devices******** **/
 @media screen and (max-width: 600px) {
-    .wheretostartlink {
-        display: none;
+    .topLayer, .bottomLayer{
+        padding: 0;
+        display: block;
+        margin: 0;
     }
 
     .smallMenu {
         display: block;
+        margin: 5px 0;
     }
 
     .smallMenu .intraLink {
