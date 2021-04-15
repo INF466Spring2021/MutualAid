@@ -15,12 +15,6 @@
         <link rel="stylesheet" href="css.css">
         <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
         
-
-        <!-- JS -->
-        <script src="js.js"></script>
-        <script src="jquery-ui-1.12.1/jquery-3.6.0.js"></script>
-        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
-        
         <style>
             .ui-icon {
                 background-image: url(jquery-ui-1.12.1/images/ui-icons_ffffff_256x240.png)
@@ -332,49 +326,10 @@
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh6mxQpbQfLExG7o7IjPGaYtDYuMu-tAUPUraE3QAIv-HQeg/viewform?usp=sf_link" target="_blank">Contact Us!</a>
             </div>
         </footer>
-
-        <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
-
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function() {
-                    this.classList.toggle("collapsibleActive");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                    } else {
-                        content.style.display = "block";
-                    }
-                });
-            }
-
-            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-            function myFunction() {
-                var x = document.getElementById("myLinks");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
-
-            $(document).on('click', '.collapsible', function() {
-                $(this).children().toggleClass('ui-icon-triangle-1-e ui-icon-triangle-1-s');
-            })
-
-            //back to top button
-            var totopbutton = document.getElementById("totopbutton")
-            var rootElement = document.documentElement
-
-            function gototop() {
-              rootElement.scrollTo({
-                top: 0,
-                behavior: "smooth"
-              })
-            }
-            totopbutton.addEventListener("click", gototop)
-
-        </script>
+        
+        <!-- JS -->
+        <script src="jquery-ui-1.12.1/jquery-3.6.0.js"></script>
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        <script src="js.js"></script>
     </body>
 </html>
