@@ -13,8 +13,6 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="css.css">
-         <!-- js -->
-        <script src="js.js"></script>
 
         <script>
             function welcome() {
@@ -29,30 +27,43 @@
 
     <body onload="welcome()">
 
-        <!-- Header -->
         <header>
-            <div class="logo">
-                <img src="placeholders/fistbump.png" alt="">
+            <div>
+                <div class="logo">
+                    <img src="placeholders/fistbump.png" alt="">
+                </div>
+                <div>
+                    <h1>Home</h1>
+                </div>
+                <div class="mobileNav">
+                    <a href="#home" class="active"></a>
+                    
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <div class="bars">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    </a>
+                    
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="#">Home</a>
+                        <a href="start.html">Where to Start</a>
+                        <a href="tools.html">Tools</a>
+                        <a href="locations.html">Mutual Aid Near Me</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+
+                </div>
             </div>
-            <h1>Home</h1>
         </header>
 
         <!-- Homepage only navi -->
         <div class="spacer">
             &nbsp;
         </div>
-
-        <!-- Header + Navi Mobile -->
-        <header id="mobileHeader">
-            <div class="mobileHeadContainer">
-                <div class="logo">
-                    <img src="placeholders/fistbump.png" alt="">
-                </div>
-                <div class="mobilePageTitle">
-                    <h1>Home</h1>
-                </div>
-            </div>
-        </header>
 
         <div class="fourpanelnavi">
 
@@ -91,5 +102,8 @@
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh6mxQpbQfLExG7o7IjPGaYtDYuMu-tAUPUraE3QAIv-HQeg/viewform?usp=sf_link" target="_blank">Contact Us!</a>
             </div>
         </footer>
+        
+        <!-- js -->
+        <script src="js.js"></script>
     </body>
 </html>
