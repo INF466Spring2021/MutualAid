@@ -348,10 +348,6 @@ footer a:hover {
     .sidenav {
         display: none;
     }
-    
-    #tabs {
-        margin-top: 0;
-    }
 
     main {
         margin: 100px 3% 0 3%;
@@ -433,10 +429,6 @@ footer a:hover {
         height: 5px;
         background-color: black;
         margin: 6px 0;
-    }
-    
-    #tabs {
-        margin-top: 100px;
     }
 }
 
