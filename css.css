@@ -434,6 +434,10 @@ footer a:hover {
         background-color: black;
         margin: 6px 0;
     }
+    
+    #tabs {
+        margin-top: 100px;
+    }
 }
 
 
@@ -465,7 +469,7 @@ footer a:hover {
 
 
 /****************************************** mobile devices ******************************************/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .topLayer, .bottomLayer{
         padding: 0;
         display: block;
