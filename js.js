@@ -1,3 +1,4 @@
+/* jQuery accordion + tabs */
 $(document).ready(function() {
     $( ".accordion" ).accordion({
         heightStyle: "content",
@@ -17,12 +18,14 @@ function myFunction() {
     }
 }
 
+/* Alert on visit */
 var visited = localStorage.getItem('visited');
 if (!visited) {
   alert("Disclaimer: The information you obtain at this site is not, nor is it intended to be, legal advice. You should consult an attorney for advice regarding your individual situation.");
   localStorage.setItem('visited', true);
 }
 
+/* Back to top button */
 var totopbutton = document.getElementById("totopbutton")
 var rootElement = document.documentElement
 
@@ -37,6 +40,7 @@ if(totopbutton){
     totopbutton.addEventListener("click", gototop, false);
 }
 
+/* Collapsible menu */
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
