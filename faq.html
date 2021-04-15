@@ -94,25 +94,9 @@
             </div>
         </footer>
 
-        <script>
-            $(document).ready(function() {
-                $( ".accordion" ).accordion({
-                    heightStyle: "content",
-                    collapsible: true,
-                    active: false
-                });
-                $( "#tabs" ).tabs();
-            });
-            
-            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-            function myFunction() {
-                var x = document.getElementById("myLinks");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
-        </script>
+        <!-- JS -->
+        <script src="jquery-ui-1.12.1/jquery-3.6.0.js"></script>
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        <script src="js.js"></script>
     </body>
 </html>
