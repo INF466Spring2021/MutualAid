@@ -11,9 +11,10 @@
 .panels{
     flex: 1;
     flex-grow: 1;
-    margin:10px;
+    flex-shrink: 1;
     width: 200px;
     height: auto;
+    justify-content: space-between;
 }
 
 /**This controls the position of the text and images in the panels.**/
@@ -312,12 +313,12 @@ footer a:hover {
         padding: 7px 10px;
     }
 
-    fourpanelnavi {
-        padding-left: 30px;
+    .fourpanelnavi {
+        padding-left: 50px;
     }
 
     .panelimage {
-        padding-left: 30px;
+        padding-left: 10px;
         position: relative;
         text-align: center;
         max-width: 90%;
@@ -339,10 +340,12 @@ footer a:hover {
     /**This is the div that holds all the panels div**/
     .fourpanelnavi {
         padding-top: 30px;
+        padding: 40px;
         display: flex;
         height: 100%;
         flex-wrap: wrap;
-        align-items: flex-start
+        justify-content: center;
+        align-items: stretch;
     }
 
     /**This is the panels, margin is used for the space in between them. Border can be got rid off.**/
@@ -351,6 +354,13 @@ footer a:hover {
         margin: 10px;
         width: 200px;
         height: auto;
+    }
+
+    .panelimage {
+        position: relative;
+        text-align: center;
+        max-width: 80%;
+        margin-left: 3%;
     }
 
     h1 {
@@ -377,10 +387,6 @@ footer a:hover {
 
     main {
         margin-left: 0;
-    }
-
-    .spacer {
-        display: none;
     }
 
     h1 {
@@ -413,20 +419,27 @@ footer a:hover {
         flex-wrap: wrap;
     }
 
-    /**This is the panels, margin is used for the space in between them. Border can be got rid off.**/
-    .panels{
-        flex-basis: 34%;
-        margin:10px;
-        width: 200px;
-        height: auto;
-    }
-
     .panelimage {
         position: relative;
         text-align: center;
-        max-width: 80%;
+        max-width: 90%;
         margin-left: 3%;
     }
+
+    /**This is the panels, margin is used for the space in between them. Border can be got rid off.**/
+    .panels{
+      flex: 0 32%;
+      margin-bottom: 8%;
+    }
+
+    .paneltext {
+      padding-left: 10px;
+    }
+
+    h2{
+      font-size: 16px;
+    }
+
 
     #totopbutton {
         float: right;
@@ -545,14 +558,11 @@ footer a:hover {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     /**This is the panels, margin is used for the space in between them. Border can be got rid off.**/
     .panels{
-        flex-basis: 34%;
-        margin:10px;
-        width: 200px;
-        height: auto;
     }
 
     .desktopNav {
