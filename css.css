@@ -99,7 +99,12 @@ h2 {
 
 /****************************************** CSS for mutualaidnearme ******************************************/
 
-
+.locationbox {
+    border-style: double;
+    background-color:#Efc592;
+    margin-top: 20px;
+    padding: 20px;
+}
 
 /****************************************** CSS for tools ******************************************/
 
