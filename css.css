@@ -490,4 +490,15 @@ footer a:hover {
         font-size: 30px;
         padding-top: 5%;
     }
+    
+    footer a {
+        width: 75px;
+        text-decoration:none;
+        margin: 0 30px;
+        padding: 5px 15px;
+        background-color:#e0e0de;
+        font-size: 18px;
+        border-radius:4px;
+        border: 3px solid #e0e0de;
+    }
 }
