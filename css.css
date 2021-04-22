@@ -120,11 +120,12 @@ h2 {
 
 /****************************************** CSS for about us ******************************************/
 
-.aboutus {
-    position: absolute;
-    bottom: 100px;
-}
 
+.disclaimer {
+    border-style:solid;
+    border-color: mediumvioletred;
+    padding-left: 20px;
+}
 
 
 /****************************************** CSS for faq ******************************************/
