@@ -37,7 +37,11 @@
 }
 
 
+.intro {
+    margin-left: 50px;
+    line-height: 30px;
 
+}
 /****************************************** CSS for wheretostart ******************************************/
 
 .intraLink {
