@@ -2,7 +2,6 @@
 
 /**This is the div that holds all the panels div**/
 .fourpanelnavi {
-    padding: 30px 35px 0px;
     display: flex;
     width: 100%;
 }
@@ -18,19 +17,9 @@
 
 /**This controls the position of the text and images in the panels.**/
 .panelimage {
-    margin-bottom: 20%;
     padding-left: 5%;
     position: relative;
     text-align: center;
-}
-
-/**This puts the font in the middle of the image.**/
-.paneltext {
-    position: absolute;
-    font-size: 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .spacer{
@@ -38,15 +27,17 @@
     height: 100px;
 }
 
-#homeHeader {
-    display: block;
-}
-
 .intro {
     margin-left: 50px;
     line-height: 30px;
-
 }
+
+.homeInfo {
+    width: 95%;
+}
+
+
+
 /****************************************** CSS for wheretostart ******************************************/
 
 .intraLink {
