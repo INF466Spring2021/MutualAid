@@ -45,15 +45,24 @@
 
         <!-- Header + Navi Mobile -->
         <header id="mobileHeader">
-            <div class="mobileHeadContainer">
+            <div>
                 <div class="logo">
                     <img src="placeholders/fistbump.png" alt="">
                 </div>
                 <div class="mobilePageTitle">
-                    <h1>Tools</h1>
+                    <h1 style="padding-top: 20%;">Tools</h1>
                 </div>
                 <div class="mobileNav">
                     <a href="#home" class="active"></a>
+
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="homepage.html">Home</a>
+                        <a href="wheretostart.html">Where to Start</a>
+                        <a href="#">Tools</a>
+                        <a href="mutualaidnearme.html">Mutual Aid Near Me</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
 
                     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -63,15 +72,6 @@
                         <div></div>
                     </div>
                     </a>
-
-                    <!-- Navigation links (hidden by default) -->
-                    <div id="myLinks">
-                        <a href="index.html">Home</a>
-                        <a href="start.html">Where to Start</a>
-                        <a href="#">Tools</a>
-                        <a href="locations.html">Mutual Aid Near Me</a>
-                        <a href="faq.html">FAQ</a>
-                    </div>
                 </div>
             </div>
         </header>
@@ -188,19 +188,6 @@
                     x.style.display = "block";
                 }
             }
-
-            //back to top button
-
-            var totopbutton = document.getElementById("totopbutton")
-            var rootElement = document.documentElement
-
-            function gototop() {
-              rootElement.scrollTo({
-                top: 0,
-                behavior: "smooth"
-              })
-            }
-            totopbutton.addEventListener("click", gototop)
         </script>
     </body>
 </html>

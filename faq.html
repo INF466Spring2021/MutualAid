@@ -4,9 +4,9 @@
         <!-- Meta Info-->
         <meta charset="utf-8">
         <title>FAQ</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Mutual Aid Societies are communities where services and resources can be exchanged for mutual benefit! Mutual aid societies can be set up with proper resources and, or you can join one locally in the Albany area. Learn more about Mutual Aid here!">
+        <meta name="keywords" content="Mutual Aid Societies, Mutual Aid, resources, services, volunteer, volunteers, mutual aid organization, mutual aid in albany, albany mutual aid, aid, mutual aid near me">
+        <meta name="author" content="This website was created by Katherine Amoresano, Jocelyn Chan, and Zach Taylor!">
 
         <!-- Mobile Meta Info -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,41 +15,16 @@
         <link rel="stylesheet" href="css.css">
         <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
 
-        <!-- JS -->
-        <script src="jquery-ui-1.12.1/jquery-3.6.0.js"></script>
-        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        <link rel="shortcut icon" href="#">
     </head>
 
     <body>
-
-        <!-- Header Desktop -->
-        <header>
-            <div class="headContainer">
-                <div class="logo">
-                    <a href="index.html"><img src="placeholders/fistbump.png" alt=""></a>
-                </div>
-                <div class="pageTitle">
-                    <h1>FAQ</h1>
-                </div>
-            </div>
-        </header>
-
-        <!-- Navi Computer-->
-        <nav class="sidenav">
-            <a href="index.html">Home</a>
-            <a href="start.html">Where to Start</a>
-            <a href="tools.html">Tools</a>
-            <a href="locations.html">Mutual Aid Near Me</a>
-            <a href="#">FAQ</a>
-        </nav>
-
-        <!-- Header + Navi Mobile -->
-        <header id="mobileHeader">
+       <header>
             <div>
                 <div class="logo">
                     <img src="placeholders/fistbump.png" alt="">
                 </div>
-                <div class="mobilePageTitle">
+                <div>
                     <h1>FAQ</h1>
                 </div>
                 <div class="mobileNav">
@@ -67,69 +42,53 @@
                     <!-- Navigation links (hidden by default) -->
                     <div id="myLinks">
                         <a href="index.html">Home</a>
-                        <a href="#">Where to Start</a>
+                        <a href="start.html">Where to Start</a>
                         <a href="tools.html">Tools</a>
                         <a href="locations.html">Mutual Aid Near Me</a>
-                        <a href="faq.html">FAQ</a>
+                        <a href="#">FAQ</a>
                     </div>
 
                 </div>
             </div>
         </header>
 
-        <div class="spacer">
-            &nbsp;
-        </div>
+        <!-- Navi Desktop -->
+
+        <nav class="sidenav">
+            <a href="index.html">Home</a>
+            <a href="start.html">Where to Start</a>
+            <a href="tools.html">Tools</a>
+            <a href="locations.html">Mutual Aid Near Me</a>
+            <a href="#">FAQ</a>
+        </nav>
 
         <main>
-            <div class="accordion">
-                <h3>Do I have to incorporate my mutual aid society right away?</h3>
-                <div>
-                    <p>
-                    No. If while operating your mutual aid society you decide to incorporate you can do so despite being active prior to incorporating. However the benefits of incorporation will not apply retroactively to activities prior to incorporation.
-                    </p>
-                </div>
-                <h3>Do I have to have a Board of Directors?</h3>
-                <div>
-                    <p>
-                    If you are incorporated then you will need to have a board of directors. If you are not incorporated then you will not be required to have one.
-                    </p>
-                </div>
-                <h3>Do I have to have a conflict of interest policy?</h3>
-                <div>
-                    <p>
-                    *Question not answered in word document*
-                    </p>
-                </div>
-            </div>
+            <h2> Frequently Asked Questions </h2>
+
+            <h3 class="miniquestion">Q: Do I have to incorporate my mutual aid society right away?</h3>
+                <p>A: No. If while operating your mutual aid society you decide to incorporate you can do so despite being active prior to incorporating. However the benefits of incorporation will not apply retroactively to activities prior to incorporation.</p>
+
+            <h3 class="miniquestion">Q: Do I have to have a Board of Directors?</h3>
+                <p>A: If you are incorporated then you will need to have a board of directors. If you are not incorporated then you will not be required to have one.</p>
+
+            <h3 class="miniquestion">Q: Do I have to have a conflict of interest policy?</h3>
+                <p>A: The IRS does not require having a conflict of interest policy, but it is recommended, especially if your organization has 501(c)(3) status. See conflicts of interest section for more information.</p>
+
+            <h3 class="miniquestion">Q: How can I join or volunteer for a mutual aid society?</h3>
+                <p>A: A lot of mutual aid groups form informally and by word of mouth. Many groups make Facebook groups or put up posters at community bulletin boards.</p>
         </main>
 
         <footer>
             <div class="footerspace">
                 <a href="about_us.html">About Us</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh6mxQpbQfLExG7o7IjPGaYtDYuMu-tAUPUraE3QAIv-HQeg/viewform?usp=sf_link" target="_blank">Contact Us!</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfss7AmEBOAGmTk0OzoBUlCnEb5l_qUYjlQounzaDMD_G8eTw/viewform?usp=sf_link" target="_blank">Contact Us!</a>
+                <p class="footDisclaim">*Nothing in this website is intended to be legal advice and you should always contact an attorney*</p>
             </div>
         </footer>
 
-        <script>
-            $(document).ready(function() {
-                $( ".accordion" ).accordion({
-                    heightStyle: "content",
-                    collapsible: true,
-                    active: false
-                });
-                $( "#tabs" ).tabs();
-            });
-
-            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-            function myFunction() {
-                var x = document.getElementById("myLinks");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
-        </script>
+        <!-- JS -->
+        <script src="jquery-ui-1.12.1/jquery-3.6.0.js"></script>
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        <script src="js.js"></script>
     </body>
 </html>
