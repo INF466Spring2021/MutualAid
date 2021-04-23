@@ -304,7 +304,6 @@ li {
     display: none;
 }
 
-
 /****************************************** CSS for footer ******************************************/
 
 footer {
@@ -339,10 +338,10 @@ footer a:hover {
     margin-top: 2%;
 }
 
-@media screen and (max-width: 1340px) {
-    .intraDiv {
-        margin: 0 3px;
-    }
+.footDisclaim {
+    width: 100%;
+}
+
 
     .intraLink {
         padding: 7px 10px;
