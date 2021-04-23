@@ -28,12 +28,9 @@
 }
 
 .intro {
-    margin-left: 50px;
+    margin-left: 5%;
     line-height: 30px;
-}
-
-.homeInfo {
-    width: 95%;
+    width: 100%;
 }
 
 
