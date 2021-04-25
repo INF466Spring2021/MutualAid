@@ -1,13 +1,3 @@
-/* jQuery accordion + tabs */
-$(document).ready(function() {
-    $( ".accordion" ).accordion({
-        heightStyle: "content",
-        collapsible: true,
-        active: false
-    });
-    $( "#tabs" ).tabs();
-    });
-
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function myFunction() {
     var x = document.getElementById("myLinks");
