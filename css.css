@@ -168,6 +168,11 @@ main {
     line-height: 30px;
 }
 
+iframe {
+  max-width: 100%;
+}
+
+
 body{
     background-color: #e8f8f5;
     margin: 0 0 100px;
@@ -331,13 +336,13 @@ footer a:hover {
     .sidenav a {
         font-size: 20px;
     }
-    
+
     #totopbutton a {
         width: 25px;
         padding: 4px 8px;
         font-size: 12px;
     }
-    
+
     /**This is the div that holds all the panels div**/
     .fourpanelnavi {
         padding-top: 30px;
@@ -347,7 +352,7 @@ footer a:hover {
         justify-content: center;
         align-items: stretch;
     }
-    
+
     /**This is the panels, margin is used for the space in between them. Border can be got rid off.**/
     .panels{
         flex-basis: 34%;
@@ -355,7 +360,7 @@ footer a:hover {
         width: 200px;
         height: auto;
     }
-    
+
     h1 {
         margin: 0;
         font-size: 60px;
@@ -393,7 +398,7 @@ footer a:hover {
     .panelimage {
         max-width: 80%;
     }
-    
+
     #totopbutton {
         float: right;
         bottom: 110px;
@@ -448,7 +453,7 @@ footer a:hover {
         background-color: black;
         margin: 6px 0;
     }
-    
+
     .intraLink {
         padding: 7px 40px;
     }
@@ -473,11 +478,11 @@ footer a:hover {
     .fourpanelnavi {
         width: 100%;
     }
-    
+
     main {
         margin: 100px 5% 0 5%;
     }
-    
+
     .intraLink {
         padding: 7px 20px;
     }
@@ -492,22 +497,22 @@ footer a:hover {
         display: block;
         margin: 0;
     }
-    
+
     .intraLink {
         text-align: center;
         display: block;
         margin: 5px 0;
     }
-    
+
     main {
         margin: 100px 8% 0 8%;
     }
-    
+
     h1 {
         font-size: 30px;
         padding-top: 5%;
     }
-    
+
     footer a {
         width: 75px;
         text-decoration: none;
