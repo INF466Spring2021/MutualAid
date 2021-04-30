@@ -398,13 +398,33 @@ footer a:hover {
         display: block;
         overflow: hidden;
         background-color: #1abc9c;
-        position: static;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding-right: 30px;
         background: rgb(26, 188, 156, .9);
+        z-index: -1;
     }
 
     /* Hide the links inside the navigation menu (except for logo/home) */
     .mobileNav #myLinks {
-        display: none;
+      overflow: hidden;
+      max-height: 0;
+    }
+
+    input:checked ~ #myLinks {
+      max-height: 100%;
+    }
+
+    .mobileNav label {
+      cursor: pointer;
+      font-size: 65px;
+      text-align: right;
+      display: block;
+    }
+
+    input#menu {
+      display: none;
     }
 
     /* Style navigation menu links */
@@ -429,18 +449,7 @@ footer a:hover {
 
     /* Style the active link (or home/logo) */
     .active {
-        background-color: #1abc9c;
-        color: white;
-        text-align: center;
         margin-top: -10px;
-        pointer-events: none;
-    }
-
-    .bars div {
-        width: 35px;
-        height: 5px;
-        background-color: black;
-        margin: 6px 0;
     }
 
     .intraLink {
