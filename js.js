@@ -22,7 +22,6 @@ var totopbutton = document.getElementById("totopbutton")
 var rootElement = document.documentElement
 
 function gototop() {
-  // Scroll to top logic
   rootElement.scrollTo({
     top: 0,
     behavior: "smooth"
