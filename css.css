@@ -433,16 +433,6 @@ footer a:hover {
         text-align: center;
     }
 
-    /* Style the hamburger menu */
-    .mobileNav a.icon {
-        background-color: #1abc9c;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding-top: 30px;
-    }
-
     /* Style the active link (or home/logo) */
     .active {
         margin-top: -10px;
