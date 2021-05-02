@@ -15,15 +15,13 @@
 /**This controls the position of the text and images in the panels.**/
 
 .intro {
-    margin-left: 2.5%;
-    margin-right: 2.5px;
+    margin: 110px auto 0;
     line-height: 30px;
-    width: 95%;
-    margin-top: 100px;
+    width: 90%;
 }
 
-p.home{
-  width:100%;
+.intro p {
+    width: 100%;
 }
 
 
@@ -101,9 +99,7 @@ h2 {
 
 /****************************************** CSS for tools ******************************************/
 
-iframe{
-    border-width: 0px;
-}
+
 
 /****************************************** CSS for about us ******************************************/
 
@@ -154,19 +150,20 @@ email::before {
 /****************************************** CSS for every page ******************************************/
 
 main {
-    margin: 100px 3% 0 16%;
+    margin: 100px 3% 150 16%;
     padding: 10px;
     line-height: 30px;
 }
 
 iframe {
   max-width: 100%;
+  border-width: 0px;
 }
 
 
-body{
+body {
     background-color: #e8f8f5;
-    margin: 0 0 100px;
+    margin: 0 0 120px;
     font-family: sans-serif;
 }
 
@@ -232,7 +229,7 @@ h1 {
     font-size: 16px;
     line-height: 30px;
     width: 30px;
-    bottom: 125px;
+    bottom: 160px;
     right: 10px;
     position: fixed;
     opacity: 0.8;
@@ -272,6 +269,8 @@ footer {
     bottom: 0px;
     background-color: #1abc9c;
     text-align: center;
+    z-index: 2;
+    padding-top: 2%;
 }
 
 footer a {
@@ -289,12 +288,9 @@ footer a:hover {
     border: 3px solid black;
 }
 
-.footerspace {
-    margin-top: 2%;
-}
-
 .footDisclaim {
     width: 100%;
+    padding: 1% 0;
 }
 
 
