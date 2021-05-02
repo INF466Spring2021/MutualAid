@@ -392,15 +392,16 @@ footer a:hover {
         position: absolute;
         top: 10%;
         right: 0px;
+        background: rgb(26, 188, 156, 0);
         padding-right: 30px;
-        background: rgb(26, 188, 156, .9);
         z-index: 2;
     }
 
     /* Hide the links inside the navigation menu (except for logo/home) */
     .mobileNav #myLinks {
-      overflow: hidden;
-      max-height: 0;
+        overflow: hidden;
+        max-height: 0;
+        background: rgb(26, 188, 156, .9);
     }
     
     input:checked ~ #myLinks {
