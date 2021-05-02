@@ -4,15 +4,13 @@
 .fourpanelnavi {
     display: flex;
     width: 100%;
-    margin: auto;
+    padding-bottom: 35px;
 }
 
 /**This is the panels, margin is used for the space in between them. Border can be got rid off.**/
 .panels{
-  margin: 2%;
+  margin: 0 2% 2% 2%;
 }
-
-/**This controls the position of the text and images in the panels.**/
 
 .intro {
     margin: 110px auto 0;
@@ -87,7 +85,6 @@ h2 {
 }
 
 
-
 /****************************************** CSS for mutualaidnearme ******************************************/
 
 .locationbox {
@@ -97,7 +94,13 @@ h2 {
     padding: 20px;
 }
 
+
+
 /****************************************** CSS for tools ******************************************/
+
+iframe{
+    border-width: 0px;
+}
 
 
 
@@ -116,6 +119,8 @@ email::before {
     content:attr(data-user);
 }
 
+
+
 /****************************************** CSS for faq ******************************************/
 
 
@@ -125,12 +130,12 @@ email::before {
 .sidenav {
     height: 100%;
     width: 15%;
-    position: fixed; /** Stays in place on scroll **/
-    z-index: 1; /** Stay on top **/
-    top: 100px; /** Stay at the top **/
+    position: fixed; /* Stays in place on scroll */
+    z-index: 1; /* Stay on top */
+    top: 100px; /* Stay at the top */
     background-color: #8ddece;
     clear: both;
-    overflow-x: hidden; /** Disables horizontal scroll **/
+    overflow-x: hidden; /* Disables horizontal scroll */
 }
 
 /** Nav menu links **/
@@ -150,18 +155,12 @@ email::before {
 /****************************************** CSS for every page ******************************************/
 
 main {
-    margin: 100px 3% 150 16%;
+    margin: 100px 3% 150px 16%;
     padding: 10px;
     line-height: 30px;
 }
 
-iframe {
-  max-width: 100%;
-  border-width: 0px;
-}
-
-
-body {
+body{
     background-color: #e8f8f5;
     margin: 0 0 120px;
     font-family: sans-serif;
@@ -317,13 +316,13 @@ footer a:hover {
     .sidenav a {
         font-size: 20px;
     }
-
+    
     #totopbutton a {
         width: 25px;
         padding: 4px 8px;
         font-size: 12px;
     }
-
+    
     /**This is the div that holds all the panels div**/
     .fourpanelnavi {
         padding-top: 30px;
@@ -333,7 +332,7 @@ footer a:hover {
         justify-content: center;
         align-items: stretch;
     }
-
+    
     /**This is the panels, margin is used for the space in between them. Border can be got rid off.**/
     .panels{
         flex-basis: 34%;
@@ -341,7 +340,7 @@ footer a:hover {
         width: 200px;
         height: auto;
     }
-
+    
     h1 {
         margin: 0;
         font-size: 60px;
@@ -379,7 +378,7 @@ footer a:hover {
     .panelimage {
         max-width: 80%;
     }
-
+    
     #totopbutton {
         float: right;
         bottom: 110px;
@@ -391,11 +390,11 @@ footer a:hover {
         overflow: hidden;
         background-color: #1abc9c;
         position: absolute;
-        top: 0px;
+        top: 10%;
         right: 0px;
         padding-right: 30px;
         background: rgb(26, 188, 156, .9);
-        z-index: -1;
+        z-index: 2;
     }
 
     /* Hide the links inside the navigation menu (except for logo/home) */
@@ -403,18 +402,18 @@ footer a:hover {
       overflow: hidden;
       max-height: 0;
     }
-
+    
     input:checked ~ #myLinks {
       max-height: 100%;
     }
-
+    
     .mobileNav label {
       cursor: pointer;
       font-size: 65px;
       text-align: right;
       display: block;
     }
-
+    
     input#menu {
       display: none;
     }
@@ -422,9 +421,9 @@ footer a:hover {
     /* Style navigation menu links */
     .mobileNav a {
         color: white;
-        padding: 14px 16px;
+        padding: 20px 16px;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 24px;
         display: block;
         text-align: center;
     }
@@ -468,11 +467,11 @@ footer a:hover {
     .fourpanelnavi {
         width: 100%;
     }
-
+    
     main {
         margin: 100px 5% 0 5%;
     }
-
+    
     .intraLink {
         padding: 7px 20px;
     }
@@ -487,22 +486,22 @@ footer a:hover {
         display: block;
         margin: 0;
     }
-
+    
     .intraLink {
         text-align: center;
         display: block;
         margin: 5px 0;
     }
-
+    
     main {
         margin: 100px 8% 0 8%;
     }
-
+    
     h1 {
         font-size: 30px;
         padding-top: 5%;
     }
-
+    
     footer a {
         width: 75px;
         text-decoration: none;
