@@ -76,19 +76,19 @@ h2 {
     margin-top: 60px;
 }
 
-.collapsible {
+button.collapsible {
     background-color: #8ddece;;
     color: black;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 90%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 16px;
+    font-size: 18px;
 }
 
-.collapsibleActive, .collapsible:hover {
+button.collapsible.active, button.collapsible:hover {
     background-color: #1abc9c;
 }
 
@@ -97,7 +97,11 @@ h2 {
     display: none;
     overflow: hidden;
     background-color: #e8f8f5;
-    text-align: center;
+    text-align: left;
+}
+
+.collapsibleContent.display {
+    display: block;
 }
 
 .section {
