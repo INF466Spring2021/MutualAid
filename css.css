@@ -49,7 +49,7 @@ h2 {
     margin-top: 50px;
 }
 
-.collapsible {
+button.collapsible {
     background-color: #8ddece;;
     color: black;
     cursor: pointer;
@@ -61,7 +61,7 @@ h2 {
     font-size: 18px;
 }
 
-.collapsibleActive, .collapsible:hover {
+button.collapsible.active, button.collapsible:hover {
     background-color: #1abc9c;
 }
 
@@ -71,6 +71,10 @@ h2 {
     overflow: hidden;
     background-color: #e8f8f5;
     text-align: left;
+}
+
+.collapsibleContent.display {
+    display: block;
 }
 
 .topLayer, .bottomLayer{
