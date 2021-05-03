@@ -35,3 +35,15 @@ for (i = 0; i < collMenu.length; i++) { /* iterates through the function 1 time 
         this.nextElementSibling.classList.toggle("display"); /* grabs the clicked collapsible menu, grabs the next element inside the parent div and toggles display on/off */
     }
 }
+
+
+
+$(document).on('click', '.collapsible', function() {
+    var x = $(this).children(".collArrow");
+    if ($(x).hasClass("rightArrow")) {
+        $(x).replaceWith('<span class="collArrow">&#8659;</span>');
+    }
+    else {
+        $(x).replaceWith('<span class="collArrow rightArrow">&#8658;</span>');
+    }
+});
