@@ -116,14 +116,6 @@ iframe{
     padding-left: 20px;
 }
 
-email::after {
-    content: attr(data-domain);
-}
-email::before {
-    content:attr(data-user);
-}
-
-
 
 /****************************************** CSS for faq ******************************************/
 
