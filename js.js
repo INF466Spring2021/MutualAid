@@ -1,13 +1,3 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-}
-
 /* Alert on visit */
 function welcome() {
     var visited = sessionStorage.getItem('visited');
@@ -16,6 +6,8 @@ function welcome() {
       sessionStorage.setItem('visited', true);
     }
 }
+
+
 
 /* Back to top button */
 var totopbutton = document.getElementById("totopbutton")
@@ -31,23 +23,28 @@ if(totopbutton){
     totopbutton.addEventListener("click", gototop, false);
 }
 
+
+
 /* Collapsible menu */
-var coll = document.getElementsByClassName("collapsible");
+var collMenu = document.getElementsByClassName("collapsible");
 var i;
 
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("collapsibleActive");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
+for (i = 0; i < collMenu.length; i++) { /* iterates through the function 1 time */
+    collMenu[i].onclick = function () {
+        this.classList.toggle("active"); /* grabs the clicked collapsible menu, toggles active on/off */
+        this.nextElementSibling.classList.toggle("display"); /* grabs the clicked collapsible menu, grabs the next element inside the parent div and toggles display on/off */
+    }
 }
 
-/* Changes the dropdown arrow from facing right to facing down as the menu is clicked */
+
+
+/* Changes the arrow direction when collapsible menu is clicked */
 $(document).on('click', '.collapsible', function() {
-    $(this).children().toggleClass('ui-icon-triangle-1-e ui-icon-triangle-1-s');
-})
+    var x = $(this).children(".collArrow");
+    if ($(x).hasClass("rightArrow")) {
+        $(x).replaceWith('<span class="collArrow">&darr;</span>');
+    }
+    else {
+        $(x).replaceWith('<span class="collArrow rightArrow">&rarr;</span>');
+    }
+});

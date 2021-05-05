@@ -15,20 +15,30 @@
         <link rel="stylesheet" href="css.css">
 
         <link rel="shortcut icon" href="#">
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYC1HYK9YE"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-CYC1HYK9YE');
+        </script>
     </head>
 
     <body>
         <header>
             <div>
                 <div class="logo">
-                    <a href="index.html"><img src="placeholders/fistbump.png" alt="Website Logo: Mutual Aid NY"></a>
+                    <a href="index.html" aria-label="link to homepage"><img src="placeholders/fistbump.png" alt="Website Logo: Mutual Aid NY"></a>
                 </div>
                 <div>
                     <h1>Mutual Aid Near Me</h1>
                 </div>
                 <div class="mobileNav">
                     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                    <input type="checkbox" id="menu">
+                    <input type="checkbox" id="menu" aria-label="drop down menu for links to other pages">
                     <label for="menu"> ≡ </label>
                     <!-- Navigation links (hidden by default) -->
                     <div id="myLinks">
@@ -58,7 +68,7 @@
                 <div>
                     <p> **This site is not updated daily**</p>
                     <div class="map">
-                        <iframe title="Mutual Aid locations in the Capital region" src="https://www.google.com/maps/d/u/0/embed?mid=166gbu_YNOXfw3dGoir9VCrGRKPQhO38r" width="100%" height="480"></iframe>
+                        <iframe title="Mutual Aid locations in the Capital region" src="https://www.google.com/maps/d/u/0/embed?mid=166gbu_YNOXfw3dGoir9VCrGRKPQhO38r" style="width:100%" height="480"></iframe>
                     </div>
 
                     <p><a href="placeholders/LocationsList.pdf" target="_blank" rel="noopener noreferrer">View a textual list of this information.</a></p>
@@ -71,7 +81,7 @@
          <footer>
             <div class="footerspace">
                 <a href="about_us.html">About Us</a>
-                <a href="mailto:mutualaidny@gmail.com" target="_blank" rel="noopener noreferrer">Contact Us!</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfss7AmEBOAGmTk0OzoBUlCnEb5l_qUYjlQounzaDMD_G8eTw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Contact Us!</a>
                 <p class="footDisclaim">*Nothing in this website is intended to be legal advice and you should always contact an attorney*</p>
             </div>
         </footer>
