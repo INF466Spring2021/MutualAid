@@ -38,6 +38,7 @@ for (i = 0; i < collMenu.length; i++) { /* iterates through the function 1 time 
 
 
 
+/* Changes the arrow direction when collapsible menu is clicked */
 $(document).on('click', '.collapsible', function() {
     var x = $(this).children(".collArrow");
     if ($(x).hasClass("rightArrow")) {
