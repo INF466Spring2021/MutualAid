@@ -41,9 +41,9 @@ for (i = 0; i < collMenu.length; i++) { /* iterates through the function 1 time 
 $(document).on('click', '.collapsible', function() {
     var x = $(this).children(".collArrow");
     if ($(x).hasClass("rightArrow")) {
-        $(x).replaceWith('<span class="collArrow">&#8659;</span>');
+        $(x).replaceWith('<span class="collArrow">&darr;</span>');
     }
     else {
-        $(x).replaceWith('<span class="collArrow rightArrow">&#8658;</span>');
+        $(x).replaceWith('<span class="collArrow rightArrow">&rarr;</span>');
     }
 });
