@@ -384,7 +384,7 @@ footer a:hover {
         bottom: 110px;
     }
 
-    /* Style the navigation menu */
+    /* Style the navigation menu. Idea generated from this url: https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390*/
     .mobileNav {
         display: block;
         overflow: hidden;
@@ -400,12 +400,14 @@ footer a:hover {
     /* Hide the links inside the navigation menu (except for logo/home) */
     .mobileNav #myLinks {
         overflow: hidden;
+        display: none;
         max-height: 0;
         background: rgb(26, 188, 156, .9);
     }
 
     input:checked ~ #myLinks {
       max-height: 100%;
+      display: block;
     }
 
     .mobileNav label {
