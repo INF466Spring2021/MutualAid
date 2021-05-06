@@ -374,13 +374,13 @@ footer a:hover {
     .panelimage {
         max-width: 80%;
     }
-
+    
     #totopbutton {
         float: right;
         bottom: 110px;
     }
 
-    /* Style the navigation menu. Idea generated from this url: https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390*/
+    /* Style the navigation menu */
     .mobileNav {
         display: block;
         overflow: hidden;
@@ -390,31 +390,14 @@ footer a:hover {
         right: 0px;
         background: rgb(26, 188, 156, 0);
         padding-right: 30px;
-        z-index: 2;
     }
 
     /* Hide the links inside the navigation menu (except for logo/home) */
     .mobileNav #myLinks {
-        overflow: hidden;
         display: none;
-        max-height: 0;
+        overflow: hidden;
         background: rgb(26, 188, 156, .9);
-    }
-
-    input:checked ~ #myLinks {
-      max-height: 100%;
-      display: block;
-    }
-
-    .mobileNav label {
-      cursor: pointer;
-      font-size: 65px;
-      text-align: right;
-      display: block;
-    }
-
-    input#menu {
-      display: none;
+        z-index: 2;
     }
 
     /* Style navigation menu links */
@@ -426,6 +409,22 @@ footer a:hover {
         display: block;
         text-align: center;
     }
+    
+    #bars span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+    
+    #bars {
+        float: right;
+        padding: 1.5em 1em;
+        background-color: transparent;
+        border: none;
+    }
+
 
     /* Style the active link (or home/logo) */
     .active {
