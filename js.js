@@ -40,11 +40,29 @@ for (i = 0; i < collMenu.length; i++) { /* iterates through the function 1 time 
 
 /* Changes the arrow direction when collapsible menu is clicked */
 $(document).on('click', '.collapsible', function() {
+    var y = $(this);
     var x = $(this).children(".collArrow");
     if ($(x).hasClass("rightArrow")) {
         $(x).replaceWith('<span class="collArrow">&darr;</span>');
+        $(y).attr("aria-expanded", "true");
     }
     else {
         $(x).replaceWith('<span class="collArrow rightArrow">&rarr;</span>');
+        $(y).attr("aria-expanded", "false");
     }
 });
+
+
+
+/* Hamburger menu */
+document.getElementById("bars").onclick = function() {
+    var x = $("#myLinks").css("display")
+    if (x == "none") {
+        $("#myLinks").css("display", "block");
+        $("#bars").attr("aria-expanded", "true");
+    }
+    else {
+        $("#myLinks").css("display", "none");
+        $("#bars").attr("aria-expanded", "false");
+    }
+}
