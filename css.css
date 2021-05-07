@@ -269,8 +269,21 @@ li {
 
 /****************************************** CSS for footer ******************************************/
 
+/*
+Sticky footer at bottom of page
 footer {
     position: fixed;
+    width: 100%;
+    bottom: 0px;
+    background-color: #1abc9c;
+    text-align: center;
+    z-index: 2;
+    padding-top: 2%;
+}
+*/
+
+footer {
+    position: absolute;
     width: 100%;
     bottom: 0px;
     background-color: #1abc9c;
