@@ -253,17 +253,17 @@ li {
     width: 90%;
 }
 
-#skipMain {
-    visibility: hidden;
+.skipMain a{
     position: absolute;
-    top: 0;
+    top: -40px;
     left: 0;
-    z-index: 3555;
+    z-index: 5;
+    background-color: white;
+    padding: 10px;
 }
 
-#skipMain:focus, #skipMain:active {
-    visibility: visible;
-    z-index: 3214;
+.skipMain a:focus, .skipMain a:active {
+    top: 0px;
 }
 
 
