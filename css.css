@@ -253,6 +253,18 @@ li {
     width: 90%;
 }
 
+#skipMain {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3555;
+}
+
+#skipMain:focus, #skipMain:active {
+    visibility: visible;
+    z-index: 3214;
+}
 
 
 /****************************************** CSS for footer ******************************************/
