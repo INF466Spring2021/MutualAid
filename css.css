@@ -23,6 +23,7 @@
 }
 
 
+
 /****************************************** CSS for wheretostart ******************************************/
 
 .intraLink {
@@ -85,6 +86,10 @@ button.collapsible.active, button.collapsible:hover {
 
 .linkSection {
     scroll-margin-top: 110px;
+}
+
+.ui-icon {
+    background-image: url(jquery/images/ui-icons_ffffff_256x240.png)
 }
 
 
@@ -153,6 +158,11 @@ main {
     margin: 100px 3% 150px 16%;
     padding: 10px;
     line-height: 30px;
+}
+
+#homeMain {
+    margin: 0;
+    padding: 0;
 }
 
 body{
